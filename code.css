@@ -6,14 +6,17 @@ body {
   overflow-x: hidden;
   position: absolute;
 }
+
 a {
   color: rgb(50, 25, 25);
   text-decoration: none;
   font-weight: bold;
 }
+
 a:hover {
   color: rgb(120, 61, 61);
 }
+
 section {
   height: 100vh;
   width: 100vw;
@@ -42,85 +45,109 @@ section {
   width: 100%;
   height: 100vh;
 }
+
 .milowissig {
   position: relative;
   top: 20vh;
 }
+
 .milowissig, .devicon {
   /* fill: black; */
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
   transition-property: filter;
   transition-duration: .5s;
 }
+
 .milowissig:hover, .devicon:hover {
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
 }
+
 .blur {
   filter: blur(2px);
   transition-property: filter;
   transition-duration: .5s;
 }
+
 .blur:hover {
   filter: blur(0px);
 }
+
 .devicon {
   font-size: 40px;
   color: rgb(25, 25, 25);
 }
+
 .ruby {
   color: rgb(184, 0, 0);
 }
+
 .html {
   color: rgb(230, 96, 0);
 }
+
 .css {
   color: rgb(29, 131, 205);
 }
+
 .ps {
   color: rgb(0, 1, 122);
 }
+
 .ai {
   color: rgb(255, 182, 41);
 }
+
 .js {
   color: rgb(236, 255, 83);
 }
+
 .heroku {
   color: rgb(62, 0, 111);
 }
+
 .git {
   color: rgb(223, 87, 0);
 }
+
 .gimp {
   color: rgb(60, 73, 64);
 }
+
 #intro h1 {
   margin-top: 0;
 }
+
 h2 {
   text-align: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   margin: 0;
   /* box-shadow: 0 1px 5px black; */
+  font-family: 'Lalezar', cursive;
+  font-weight: normal;
 }
+
 h3 {
   text-align: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.125);
   margin: 0;
   margin-bottom: 1px;
-    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+  font-family: 'Lalezar', cursive;
+  font-weight: normal;
 }
 
 #projects {
-  background-color: white;
   position: absolute;
   top: 100vh;
   max-height: 100vh;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(to right, black, rgb(33, 30, 34));
+  color: white;
 }
+
 #intro {
   background-color: rgb(118, 157, 190);
   top: 0;
@@ -128,27 +155,32 @@ h3 {
   overflow: hidden;
   position: absolute;
 }
+
 #resume {
   background-color: rgb(228, 216, 235);
   padding: 10px;
   top: 200vh;
   position: absolute;
 }
+
 #projectInfo {
-  background-color: rgb(191, 191, 191);
   right: 0;
+  background: linear-gradient(to right, black, rgb(33, 30, 34));
   width: 100%;
+  height: 100%;
 }
+
 #projectInfo p {
   margin: 15px;
   text-align: justify;
 }
+
+#projects a {
+  color: white;
+}
+
 #projectInfo h2 {
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding: 5px;
-  background-color: rgb(115, 145, 138);
+  background-color: rgba(255, 255, 255, 0.125);
 }
 
 #resume {
@@ -160,6 +192,7 @@ h3 {
   background-size: cover;
   background-position: center;
 }
+
 .narrow {
   width: 60%;
   margin: 0 auto;
@@ -168,80 +201,99 @@ h3 {
   border-radius: 15px;
   overflow: hidden;
 }
+
 .narrow p, .narrow li {
   margin: 5px;
 }
+
 hr {
   background-color: rgba(0, 0, 0, 0.25);
   border: none;
   height: 2px;
   width: 100%;
 }
+
 .controls {
   background-color: rgb(191, 191, 191);
   padding: 0;
   margin: 0;
 }
+
 .split {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
 .svg {
-    position: absolute;
-    transition: all;
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
+  position: absolute;
+  transition: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
 }
+
 .btm_left_bg:hover, .btm_left_fg:hover, .top_left_bg:hover, .top_left_fg:hover {
   left: -20vw;
 }
+
 .btm_left_bg:hover, .btm_left_fg:hover, .btm_right_bg:hover, .btm_right_fg:hover {
   bottom: -10vh;
 }
+
 .top_left_bg:hover, .top_left_fg:hover {
-    top: -10vh;
+  top: -10vh;
 }
+
 .btm_right_bg:hover, .btm_right_fg:hover {
-    right: -20vw;
+  right: -20vw;
 }
+
 .btm_left_bg, .top_left_bg, .btm_right_bg {
   opacity: .5;
-    max-width: 25vw;
+  max-width: 25vw;
 }
+
 .btm_left_bg {
   bottom: 0;
   left: 0;
-      max-width: 40vw;
+  max-width: 40vw;
 }
+
 .top_left_bg {
   top: -30vh;
   left: 0;
 }
+
 .btm_right_bg {
   bottom: 0;
   right: 0;
 }
+
 .btm_left_fg, .top_left_fg, .btm_right_fg {
   max-width: 30vw;
 }
+
 .btm_left_fg {
   bottom: -5vh;
   left: 0;
 }
+
 .top_left_fg {
   top: 0;
   left: -5vw;
   max-width: 20vw;
 }
+
 .btm_right_fg {
   bottom: -5vh;
   right: 0;
 }
+
 .flexlist {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+
 .flexlist li:hover {
   color: red;
 }
