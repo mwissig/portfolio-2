@@ -6,7 +6,33 @@ body {
   overflow-x: hidden;
   position: absolute;
 }
-
+header {
+  position: fixed;
+  top: -50px;
+  z-index: 1000;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(white, transparent);
+  color: rgb(25, 25, 25);
+  text-align: center;
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+}
+header:hover {
+  opacity: 1;
+}
+header li {
+  margin-top: 60px;
+}
+header ul {
+  width: 40%;
+  margin: 0 auto;
+}
 a {
   color: rgb(50, 25, 25);
   text-decoration: none;
@@ -292,6 +318,7 @@ hr {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  max-width: 90%;
 }
 
 .flexlist li:hover {
