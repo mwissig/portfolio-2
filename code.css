@@ -102,6 +102,7 @@ section {
 .devicon {
   font-size: 30px;
   color: rgb(25, 25, 25);
+  text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 .ruby {
@@ -139,6 +140,11 @@ section {
 .gimp {
   color: rgb(60, 73, 64);
 }
+
+.google {
+  color: rgb(0, 2, 210);
+}
+
 
 #intro h1 {
   margin-top: 0;
@@ -338,4 +344,7 @@ hr {
   max-width: 80px;
   height: auto;
   margin: 10px;
+}
+.download {
+  margin-top: 80px;
 }
