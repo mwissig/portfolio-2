@@ -111,10 +111,9 @@ var title = $(this).attr('title');
 document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "'>Documentation on Github</a></p><p><a href='" + projects[title]['url'] + "'>Go to Site</a>";
 });
 
-$('#next').on('click', function () {
-    player.nextVideo()
-});
-
-$('#prev').on('click', function () {
-    player.previousVideo()
-});
+function scrollToSection(section) {
+  document.querySelector("#" + section).scrollIntoView({
+    behavior: 'smooth'
+  });
+  console.log("test");
+}
