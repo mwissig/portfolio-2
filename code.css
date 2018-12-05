@@ -100,7 +100,7 @@ section {
 }
 
 .devicon {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(25, 25, 25);
 }
 
@@ -184,10 +184,16 @@ h3 {
 }
 
 #resume {
-  background-color: rgb(228, 216, 235);
   padding: 10px;
   top: 200vh;
   position: absolute;
+  height: auto;
+  padding-bottom: 50px;
+  overflow-y: auto;
+  text-align: justify;
+  background-image: url(images/plant2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #projectInfo {
@@ -215,16 +221,6 @@ h3 {
   background-color: rgba(255, 255, 255, 0.125);
 }
 
-#resume {
-  height: auto;
-  padding-bottom: 50px;
-  overflow-y: auto;
-  text-align: justify;
-  background-image: url(images/plant2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .narrow {
   width: 60%;
   margin: 0 auto;
@@ -235,7 +231,7 @@ h3 {
 }
 
 .narrow p, .narrow li {
-  margin: 5px;
+  margin: 10px;
 }
 
 hr {
@@ -328,4 +324,18 @@ hr {
 
 .flexlist li:hover {
   color: red;
+}
+
+.skillsgrid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: repeat(6, auto);
+  height: auto;
+}
+.skillsgrid div {
+  text-align: center;
+  max-width: 80px;
+  height: auto;
+  margin: 10px;
 }

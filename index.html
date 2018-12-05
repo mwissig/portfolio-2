@@ -12,11 +12,13 @@
 </head>
 
 <body>
-  <header><ul class="flexlist">
-  <li onclick=scrollToSection('intro')>Home</li>
-<li onclick=scrollToSection('projects')>Projects</li>
-<li onclick=scrollToSection('resume')>Resume</li>
-</ul></header>
+  <header>
+    <ul class="flexlist">
+      <li onclick=scrollToSection('intro')>Home</li>
+      <li onclick=scrollToSection('projects')>Projects</li>
+      <li onclick=scrollToSection('resume')>Resume</li>
+    </ul>
+  </header>
   <section id="intro">
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
@@ -120,14 +122,15 @@
        C431.904,17.659,441.92,6.531,456.534,0z" />
           </g>
         </svg>
-      </p><p>
-        FULL STACK WEB DEVELOPER
-        <img class="svg btm_left_bg" src="images/bottom_left_bg.svg">
-        <img class="svg btm_right_bg" src="images/bottom_right_bg.svg">
-        <img class="svg top_left_bg" src="images/top_left_bg.svg">
-        <img class="svg btm_left_fg" src="images/bottom_left_fg.svg">
-        <img class="svg btm_right_fg" src="images/bottom_right_fg.svg">
-        <img class="svg top_left_fg" src="images/top_left_fg.svg">
+        </p>
+        <p>
+          FULL STACK WEB DEVELOPER
+          <img class="svg btm_left_bg" src="images/bottom_left_bg.svg">
+          <img class="svg btm_right_bg" src="images/bottom_right_bg.svg">
+          <img class="svg top_left_bg" src="images/top_left_bg.svg">
+          <img class="svg btm_left_fg" src="images/bottom_left_fg.svg">
+          <img class="svg btm_right_fg" src="images/bottom_right_fg.svg">
+          <img class="svg top_left_fg" src="images/top_left_fg.svg">
       </h1>
 
       <!-- Use a button to pause/play the video with JavaScript -->
@@ -141,12 +144,12 @@
       <div class="controls">
         <h2>Projects</h2>
         <ul class="flexlist">
-        <li class="thumbnail" data-video-id="_pUyfrStqE0" title="artcrawler">Artcrawler</li>
-        <li class="thumbnail" data-video-id="WTvAcPI1O7U" title="postpile">Postpile</li>
-        <li class="thumbnail" data-video-id="3Cxvzxvm0mo" title="satpanel">School Admin Panel</li>
-        <li class="thumbnail" data-video-id="2ux6p9ESjwE" title="paper">Munder Difflin Paper</li>
-        <li class="thumbnail" data-video-id="evTha1zuoko" title="bakery">Queen Anne's Bakery</li>
-      </ul>
+          <li class="thumbnail" data-video-id="_pUyfrStqE0" title="artcrawler">Artcrawler</li>
+          <li class="thumbnail" data-video-id="WTvAcPI1O7U" title="postpile">Postpile</li>
+          <li class="thumbnail" data-video-id="3Cxvzxvm0mo" title="satpanel">School Admin Panel</li>
+          <li class="thumbnail" data-video-id="2ux6p9ESjwE" title="paper">Munder Difflin Paper</li>
+          <li class="thumbnail" data-video-id="evTha1zuoko" title="bakery">Queen Anne's Bakery</li>
+        </ul>
         <div id="projectInfo"></div>
       </div>
 
@@ -156,78 +159,84 @@
       <h2>Resume</h2>
       <h3 id="contact">Contact Me</h3>
       <p>
-      Milo Wissig<br>
-      Brooklyn, NY
-    </p>
+        Milo Wissig<br>
+        Brooklyn, NY
+      </p>
       <ul>
         <li><i class="fas fa-link"></i>mwissig@gmail.com</li>
         <li><i class="fas fa-envelope"></i><a href="http://www.mwissig.com">Portfolio</a></li>
         <li><i class="fab fa-github"></i> <a href="http://github.com/mwissig">Github</a></li>
         <li><i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig">Linkedin</a></li>
       </ul>
-    <p>
-      Full stack web developer with a background in painting, printmaking, and digital print design and production.</p>
+      <p>
+        Full stack web developer with a background in painting, printmaking, and digital print design and production.</p>
       <h3>Skills</h3>
+      <div class="skillsgrid">
+        <div><i class="devicon html devicon-html5-plain-wordmark"></i><br>HTML5</div>
+        <div><i class="devicon css devicon-css3-plain-wordmark"></i><br>CSS3</div>
+        <div><i class="devicon js devicon-javascript-plain"></i><br>JavaScript</div>
+
+        <div><i class="devicon ruby devicon-ruby-plain"></i><br>Ruby</div>
+        <div><i class="devicon ruby devicon-rails-plain"></i><br>Rails</div>
+        <div><i class="devicon git devicon-git-plain"></i><br>Git</div>
+        <div><i class="devicon heroku devicon-heroku-plain-wordmark"></i><br>Heroku</div>
+
+        <div><i class="devicon ps devicon-photoshop-plain"></i><i class="devicon ai devicon-illustrator-plain"></i><br>Adobe CS</div>
+        <div><i class="devicon google devicon-google-plain"></i><br>Google Maps API</div>
+      </div>
+      <h3 onclick=scrollToSection('projects')>Projects</h3>
       <p>
-        <i class="devicon html devicon-html5-plain-wordmark"></i>
-        <i class="devicon css devicon-css3-plain-wordmark"></i>
-        <i class="devicon js devicon-javascript-plain"></i>
-
-        <i class="devicon ruby devicon-ruby-plain"></i>
-        <i class="devicon ruby devicon-rails-plain"></i>
-        <i class="devicon git devicon-git-plain"></i>
-        <i class="devicon heroku devicon-heroku-plain-wordmark"></i>
-
-        <i class="devicon ps devicon-photoshop-plain"></i>
-        <i class="devicon ai devicon-illustrator-plain"></i>
-        <i class="devicon gimp devicon-gimp-plain"></i>
+        <a href="https://artcrawler.herokuapp.com/">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
+        A mobile web app for scheduling, mapping and attending multi-location arts events.
       </p>
-      <p>
-      HTML5 · CSS3 · Javascript · Ruby Rails · Sinatra SQL
-      Bootstrap · Adobe CS · Google Maps API</p>
-      <h3><a href="#projects">Projects</a></h3>
-      <p>
-      <a href="https://artcrawler.herokuapp.com/">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
-      A mobile web app for scheduling, mapping and attending multi-location arts events.
-    </p><hr><p>
-      <a href="https://sat-panel.herokuapp.com/">School Admin Panel</a> / Rails, 2018<br>
-      An administration panel for managing students, courses and employees in a school.
-    </p><hr><p>
-      <a href="http://postpile.herokuapp.com">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
-      A social media web app that allows users to make text and image posts and send messages.
-    </p><hr><p>
-      <a href="https://mwissig.github.io/Munder-Difflin-Paper/">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
-      A web site for a paper company featuring scroll animations.
-    </p><hr><p>
-      <a href="http://coldplaycrybaby.com">ColdplayCrybaby.com</a> / HTML, CSS & Graphicss, 2017<br>
-      A retro Livejournal-inspired site featured on the iTunes top 100 comedy podcast “My Brother My Brother and Me.”</p>
-      <h3>Education</h3>
-      <p>
-      New York Code + Design Academy / Certificate<br>
-      OCTOBER 2018, NEW YORK, NY<br>
-      NYCDA Software Engineering Intensive Certification
-    </p>
       <hr>
       <p>
-      Pratt Institute / BFA<br>
-      MAY 2013, BROOKLYN, NY<br>
-      Bachelor of Fine Arts; Specializing in Painting</p>
+        <a href="https://sat-panel.herokuapp.com/">School Admin Panel</a> / Rails, 2018<br>
+        An administration panel for managing students, courses and employees in a school.
+      </p>
+      <hr>
+      <p>
+        <a href="http://postpile.herokuapp.com">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
+        A social media web app that allows users to make text and image posts and send messages.
+      </p>
+      <hr>
+      <p>
+        <a href="https://mwissig.github.io/Munder-Difflin-Paper/">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
+        A web site for a paper company featuring scroll animations.
+      </p>
+      <hr>
+      <p>
+        <a href="http://coldplaycrybaby.com">ColdplayCrybaby.com</a> / HTML, CSS & Graphicss, 2017<br>
+        A retro Livejournal-inspired site featured on the iTunes top 100 comedy podcast “My Brother My Brother and Me.”</p>
+      <h3>Education</h3>
+      <p>
+        New York Code + Design Academy / Certificate<br>
+        OCTOBER 2018, NEW YORK, NY<br>
+        NYCDA Software Engineering Intensive Certification
+      </p>
+      <hr>
+      <p>
+        Pratt Institute / BFA<br>
+        MAY 2013, BROOKLYN, NY<br>
+        Bachelor of Fine Arts; Specializing in Painting</p>
       <h3>Experience</h3>
       <p>
-      Staples / Copy & Print Associate
-      <br>
-      JANUARY 2015 - JUNE 2018, NEW YORK, NY
-      <br>
-      Created and prepared graphics for print media and produced digital prints with a variety of equipment.
-    </p>
-      <hr><p>
-      Pratt Institute / Gallery Assistant
-      <br>
-      SEPTEMBER 2011 - JANUARY 2013, NEW YORK, NY<br>
-      Installed work for art exhibitions and responded to gallery inquiries.</p>
+        Staples / Copy & Print Associate
+        <br>
+        JANUARY 2015 - JUNE 2018, NEW YORK, NY
+        <br>
+        Created and prepared graphics for print media and produced digital prints with a variety of equipment.
+      </p>
+      <hr>
+      <p>
+        Pratt Institute / Gallery Assistant
+        <br>
+        SEPTEMBER 2011 - JANUARY 2013, NEW YORK, NY<br>
+        Installed work for art exhibitions and responded to gallery inquiries.</p>
       <h2> Download PDF Resume | <a href="docs/Wissig_Milo_resume.pdf"><i class="fas fa-file-download"></i> formatted</a> | <a href="docs/Wissig_Milo_resume_plain.pdf"><i class="fas fa-file-download"></i> plain text</a></h2>
     </div>
-    Background image by <a href="//commons.wikimedia.org/w/index.php?title=User:Anatoly_Mikhaltsov&amp;action=edit&amp;redlink=1" class="new" title="User:Anatoly Mikhaltsov (page does not exist)">Anatoly Mikhaltsov</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44977480">Link</a>
+    Background image by <a href="//commons.wikimedia.org/w/index.php?title=User:Anatoly_Mikhaltsov&amp;action=edit&amp;redlink=1" class="new" title="User:Anatoly Mikhaltsov (page does not exist)">Anatoly Mikhaltsov</a> - <span class="int-own-work"
+      lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44977480">Link</a>
   </section>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="code.js"></script>
