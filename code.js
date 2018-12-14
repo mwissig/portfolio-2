@@ -22,20 +22,20 @@ var projects = {
   "opengym": {
     "name": "Open Gym",
     "github": "https://github.com/stephanie-vitalherne/opengym",
-    "url": "https://github.com/stephanie-vitalherne/opengym",
+    "url": "",
     "username": "",
     "password": "",
     "languages": ["Ruby on Rails"],
-    "description": "<p>Open Gym is a Rails web app for people with available space in a gym, sports field or court to rent or lend that space to others for games.</p><p>My main role in this project was to use geolocation and geocoding to save the last known location of the user and then calculate the distance from new events as they are being created so that nearby users can recieve notifications.</p><p>I also created the notification system and the ability for users to earn points for participating in games.</p>"
+    "description": "<p>Open Gym is a Rails web app for people with available space in a gym, sports field or court to rent or lend that space to others for games.</p><p>My main role in this project was to use geolocation and geocoding to save the last known location of the user and then calculate the distance from new events as they are being created so that nearby users can recieve notifications.</p><p>I also created the notification system and the ability for users to earn points for participating in games, and a system for allowing RSVPs from users without accounts.</p>"
   },
   "satpanel": {
     "name": "School Admin Panel",
     "github": "https://github.com/mwissig/School-Admin-Panel",
-    "url": "https:/sat-panel.herokuapp.com",
-    "username": "",
-    "password": "",
+    "url": "https://sat-panel.herokuapp.com",
+    "username": "User@example.com",
+    "password": "password",
     "languages": ["Ruby on Rails"],
-    "description": "<p>An administrative panel for a school made with Rails.</p><p>The interface can be used to create, edit, and delete students, courses, cohorts, and employees.</p>"
+    "description": "<p>An administrative panel for a school made with Rails.</p><p>The interface can be used to create, edit, and delete students, courses, cohorts, and employees.</p><p>This app uses AJAX to allow data to be manipulated without reloading the page.</p>"
   },
   "postpile": {
     "name": "Postpile",
@@ -58,7 +58,7 @@ var projects = {
   "bakery": {
     "name": "Queen Anne's Bakery",
     "github": "https://github.com/mwissig/Bakery",
-    "url": "https://github.com/mwissig/Bakery",
+    "url": "",
     "username": "",
     "password": "",
     "languages": ["Sinatra"],
@@ -77,7 +77,7 @@ function onYouTubeIframeAPIReady() {
     videoId: '_pUyfrStqE0',
     playerVars: {
       color: 'white',
-      playlist: 'WTvAcPI1O7U,3Cxvzxvm0mo,2ux6p9ESjwE,evTha1zuoko'
+      playlist: 'WTvAcPI1O7U,ozqyQFDTA2A,3Cxvzxvm0mo,2ux6p9ESjwE,evTha1zuoko'
     },
     events: {
       onReady: initialize
@@ -102,13 +102,26 @@ function initialize() {
   }, 1000)
 
 }
-
+var extLink = "";
+var loginInfo = "";
 $('.thumbnail').on('click', function() {
 
   var url = $(this).attr('data-video-id');
 var title = $(this).attr('title');
   player.cueVideoById(url);
-document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p><p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
+  if (projects[title]['url'] != "") {
+    extLink = "<p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
+  }
+  else {
+    extLink = "";
+  };
+  if (projects[title]['username'] != "") {
+    loginInfo = "<p>Demo username: " + projects[title]['username'] + "</p><p>Demo password: " + projects[title]['password'] + "</p>";
+  }
+  else {
+      loginInfo = "";
+  };
+document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + loginInfo + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p>" + extLink;
 });
 
 function scrollToSection(section) {

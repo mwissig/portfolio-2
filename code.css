@@ -375,7 +375,7 @@ hr {
 #projects .flexlist li {
   display: flex;
   align-items: center;
-  height: 2.2em;
+  height: 3.2em;
 }
 
 .flexlist li:hover {
