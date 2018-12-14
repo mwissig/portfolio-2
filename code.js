@@ -22,7 +22,7 @@ var projects = {
   "opengym": {
     "name": "Open Gym",
     "github": "https://github.com/stephanie-vitalherne/opengym",
-    "url": "",
+    "url": "https://github.com/stephanie-vitalherne/opengym",
     "username": "",
     "password": "",
     "languages": ["Ruby on Rails"],
@@ -30,7 +30,7 @@ var projects = {
   },
   "satpanel": {
     "name": "School Admin Panel",
-    "github": "",
+    "github": "https://github.com/mwissig/School-Admin-Panel",
     "url": "https:/sat-panel.herokuapp.com",
     "username": "",
     "password": "",
@@ -57,8 +57,8 @@ var projects = {
   },
   "bakery": {
     "name": "Queen Anne's Bakery",
-    "github": "",
-    "url": "",
+    "github": "https://github.com/mwissig/Bakery",
+    "url": "https://github.com/mwissig/Bakery",
     "username": "",
     "password": "",
     "languages": ["Sinatra"],
@@ -66,7 +66,7 @@ var projects = {
   }
 };
 var title = "artcrawler";
-document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "'>Documentation on Github</a></p><p><a href='" + projects[title]['url'] + "'>Go to Site</a>";
+document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p><p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
 
 var player;
 
@@ -108,7 +108,7 @@ $('.thumbnail').on('click', function() {
   var url = $(this).attr('data-video-id');
 var title = $(this).attr('title');
   player.cueVideoById(url);
-document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "'>Documentation on Github</a></p><p><a href='" + projects[title]['url'] + "'>Go to Site</a>";
+document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p><p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
 });
 
 function scrollToSection(section) {

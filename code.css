@@ -299,7 +299,7 @@ hr {
 
 .split {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 48%;
 }
 
 .svg {
@@ -395,6 +395,9 @@ hr {
   max-width: 80px;
   height: auto;
   margin: 10px;
+}
+.name {
+  text-align: center;
 }
 .download {
   margin-top: 80px;
