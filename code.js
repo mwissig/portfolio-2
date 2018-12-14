@@ -113,7 +113,7 @@ document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['nam
 
 function scrollToSection(section) {
   document.querySelector("#" + section).scrollIntoView({
-    behavior: 'smooth'
+    behavior: 'smooth', block: 'start'
   });
   console.log("test");
 }

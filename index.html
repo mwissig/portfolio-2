@@ -16,7 +16,7 @@
     <ul class="flexlist">
       <li onclick=scrollToSection('intro')>Home</li>
       <li onclick=scrollToSection('projects')>Projects</li>
-      <li onclick=scrollToSection('resume')>Resume</li>
+      <li onclick=scrollToSection('resume')>Résumé</li>
     </ul>
   </header>
   <section id="intro">
@@ -125,12 +125,12 @@
         </p>
         <p>
           FULL STACK WEB DEVELOPER
-          <img class="svg btm_left_bg" src="images/bottom_left_bg.svg">
+          <!-- <img class="svg btm_left_bg" src="images/bottom_left_bg.svg">
           <img class="svg btm_right_bg" src="images/bottom_right_bg.svg">
           <img class="svg top_left_bg" src="images/top_left_bg.svg">
           <img class="svg btm_left_fg" src="images/bottom_left_fg.svg">
           <img class="svg btm_right_fg" src="images/bottom_right_fg.svg">
-          <img class="svg top_left_fg" src="images/top_left_fg.svg">
+          <img class="svg top_left_fg" src="images/top_left_fg.svg"> -->
       </h1>
 
       <!-- Use a button to pause/play the video with JavaScript -->
@@ -156,17 +156,17 @@
   </section>
   <section id="resume">
     <div class="narrow">
-      <h2>Resume</h2>
+      <h2 id="resumetop">Résumé</h2>
       <h3 id="contact">Contact Me</h3>
       <p>
         Milo Wissig<br>
         Brooklyn, NY
       </p>
       <ul>
-        <li><i class="fas fa-link"></i>mwissig@gmail.com</li>
-        <li><i class="fas fa-envelope"></i><a href="http://www.mwissig.com">Portfolio</a></li>
-        <li><i class="fab fa-github"></i> <a href="http://github.com/mwissig">Github</a></li>
-        <li><i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig">Linkedin</a></li>
+        <li><i class="fas fa-envelope"></i>mwissig@gmail.com</li>
+        <li><i class="fas fa-link"></i><a onclick=scrollToSection('projects')>Portfolio</a></li>
+        <li><i class="fab fa-github"></i> <a href="http://github.com/mwissig" target="_blank">Github</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig" target="_blank">Linkedin</a></li>
       </ul>
       <p>
         Full stack web developer with a background in painting, printmaking, and digital print design and production.</p>
@@ -186,27 +186,27 @@
       </div>
       <h3 onclick=scrollToSection('projects')>Projects</h3>
       <p>
-        <a href="https://artcrawler.herokuapp.com/">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
+        <a href="https://artcrawler.herokuapp.com/" target="_blank">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
         A mobile web app for scheduling, mapping and attending multi-location arts events.
       </p>
       <hr>
       <p>
-        <a href="https://sat-panel.herokuapp.com/">School Admin Panel</a> / Rails, 2018<br>
+        <a href="https://sat-panel.herokuapp.com/" target="_blank">School Admin Panel</a> / Rails, 2018<br>
         An administration panel for managing students, courses and employees in a school.
       </p>
       <hr>
       <p>
-        <a href="http://postpile.herokuapp.com">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
+        <a href="http://postpile.herokuapp.com" target="_blank">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
         A social media web app that allows users to make text and image posts and send messages.
       </p>
       <hr>
       <p>
-        <a href="https://mwissig.github.io/Munder-Difflin-Paper/">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
+        <a href="https://mwissig.github.io/Munder-Difflin-Paper/ target="_blank"">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
         A web site for a paper company featuring scroll animations.
       </p>
       <hr>
       <p>
-        <a href="http://coldplaycrybaby.com">ColdplayCrybaby.com</a> / HTML, CSS & Graphicss, 2017<br>
+        <a href="http://coldplaycrybaby.com" target="_blank">ColdplayCrybaby.com</a> / HTML, CSS & Graphicss, 2017<br>
         A retro Livejournal-inspired site featured on the iTunes top 100 comedy podcast “My Brother My Brother and Me.”</p>
       <h3>Education</h3>
       <p>
@@ -233,10 +233,14 @@
         <br>
         SEPTEMBER 2011 - JANUARY 2013, NEW YORK, NY<br>
         Installed work for art exhibitions and responded to gallery inquiries.</p>
-      <h2 class="download"> Download PDF Resume | <a href="docs/Wissig_Milo_resume.pdf"><i class="fas fa-file-download"></i> formatted</a> | <a href="docs/Wissig_Milo_resume_plain.pdf"><i class="fas fa-file-download"></i> plain text</a></h2>
+      <h2 class="download"> Download PDF Résumé | <a href="docs/Wissig_Milo_resume.pdf" target="_blank"><i class="fas fa-file-download"></i> formatted</a> | <a href="docs/Wissig_Milo_resume_plain.pdf" target="_blank"><i class="fas fa-file-download"></i> plain text</a></h2>
     </div>
-    Background image by <a href="//commons.wikimedia.org/w/index.php?title=User:Anatoly_Mikhaltsov&amp;action=edit&amp;redlink=1" class="new" title="User:Anatoly Mikhaltsov (page does not exist)">Anatoly Mikhaltsov</a> - <span class="int-own-work"
-      lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44977480">Link</a>
+    <div class="copyrights">
+      <p>
+    Background image by <a href="//commons.wikimedia.org/w/index.php?title=User:Anatoly_Mikhaltsov&amp;action=edit&amp;redlink=1"  target="_blank" class="new" title="User:Anatoly Mikhaltsov (page does not exist)">Anatoly Mikhaltsov</a> - <span class="int-own-work"
+      lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0"  target="_blank" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44977480"  target="_blank">Link</a></p>
+      <p>&copy; Milo Wissig 2018</p>
+    </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="code.js"></script>
