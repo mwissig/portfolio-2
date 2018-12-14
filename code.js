@@ -72,8 +72,8 @@ var player;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('video-placeholder', {
-    width: document.getElementById("video-placeholder").offsetWidth,
-    height: window.innerHeight,
+    width: .9 * document.getElementById("leftdiv").offsetWidth,
+    height: .95 * document.getElementById("leftdiv").offsetHeight,
     videoId: '_pUyfrStqE0',
     playerVars: {
       color: 'white',
