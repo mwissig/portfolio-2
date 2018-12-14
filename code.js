@@ -77,7 +77,8 @@ function onYouTubeIframeAPIReady() {
     videoId: '_pUyfrStqE0',
     playerVars: {
       color: 'white',
-      playlist: 'WTvAcPI1O7U,ozqyQFDTA2A,3Cxvzxvm0mo,2ux6p9ESjwE,evTha1zuoko'
+      playlist: 'WTvAcPI1O7U,ozqyQFDTA2A,3Cxvzxvm0mo,2ux6p9ESjwE,evTha1zuoko',
+      rel: 0
     },
     events: {
       onReady: initialize
