@@ -10,9 +10,9 @@ header {
   position: fixed;
   top: -60px;
   z-index: 1000;
-  left: 10%;
-  right: 10%;
-  width: 80%;
+  left: 15%;
+  right: 15%;
+  width: 70%;
   height: 100px;
   border-radius: 50%;
   background: radial-gradient(white, rgba(255, 255, 255, 0.5));
@@ -241,9 +241,10 @@ h3 {
   padding-bottom: 50px;
   overflow-y: auto;
   text-align: justify;
-  background-image: url(images/plant2.jpg);
+  background-image: url(images/jupiter.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #projectInfo {
@@ -274,9 +275,9 @@ h3 {
 .narrow {
   width: 60%;
   margin: 0 auto;
-  background-color: rgba(238, 232, 190, 0.9);
+  background-color: rgba(201, 200, 190, 0.9);
   box-shadow: 0 0 200px black, 0 0 300px black;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -410,4 +411,21 @@ hr {
 }
 .copyrights a {
   color: rgb(194, 194, 194);
+}
+
+@media only screen and (max-width: 800px) {
+ .split {
+   grid-template-columns: 100%;
+   grid-template-rows: 50vh auto;
+ }
+ #projects {
+   height: auto;
+ }
+ #resume {
+   height: auto;
+ }
+ .narrow {
+   width: 95%;
+   margin: 10px;
+ }
 }
