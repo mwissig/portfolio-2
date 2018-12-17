@@ -66,7 +66,6 @@ section {
   margin: 0;
   padding-top: 70px;
   padding-bottom: 25px;
-  padding-left: 5vw;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -81,9 +80,10 @@ section {
 
 #leftdiv {
   display: flex;
+  padding: 20px;
   align-items: center;
   background-color: white;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
   justify-content: center;
 }
 
@@ -309,7 +309,8 @@ hr {
 
 .split {
   display: grid;
-  grid-template-columns: 48vw 48vw;
+  grid-template-columns: 50vw 50vw;
+margin-bottom: 10px;
 }
 
 .svg {
