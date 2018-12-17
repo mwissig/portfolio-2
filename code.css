@@ -322,6 +322,7 @@ margin-bottom: 10px;
   justify-content: space-between;
   list-style: none;
   max-width: 90%;
+  padding: 0;
 }
 
 #projects .flexlist li {
@@ -427,6 +428,7 @@ button:hover {
 
   .video-placeholder {
     width: 100vw;
+    max-height: 50vw;
   }
 
   header li {
@@ -449,7 +451,7 @@ button:hover {
   }
 
   #projects {
-    height: 80vh;
+    min-height: 200vh;
     padding-bottom: 20px;
     width: 100%;
 z-index: 900;
@@ -457,22 +459,23 @@ z-index: 900;
 
   #resume {
     height: auto;
-    top: 230vh;
+    top: 300vh;
     margin-top: 120px;
-    padding: 10px;
     z-index: 800;
   }
 
   .narrow {
-    width: 95%;
-    margin: 10px;
+    width: 96%;
+    margin: 2%;
   }
 }
 .wrap {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.skillsgrid {
+  display: flex;
+}
 
 
 
