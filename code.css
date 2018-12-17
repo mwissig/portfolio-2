@@ -80,11 +80,7 @@ section {
 
 #leftdiv {
   display: flex;
-  /* padding: 20px; */
   align-items: center;
-  /* background-color: white; */
-  border-top-right-radius: 20px;
-
   justify-content: center;
 }
 
@@ -390,61 +386,6 @@ footer {
   background-color: transparent;
 }
 
-@media only screen and (max-width: 800px) {
-  .milowissig {
-    position: relative;
-    top: 25vh;
-    width: 75%;
-  }
-
-  #intro h2 {
-    font-size: 50px;
-    top: 60vh;
-    background: transparent;
-  }
-
-  header {
-  }
-
-  header li {
-    font-size: 30px;
-  }
-
-  header ul {
-    width: 50%;
-  }
-
-  .split {
-    grid-template-columns: 96%;
-    grid-template-rows: 50vh auto;
-    margin-bottom: 20px;
-  }
-
-  #leftdiv {
-    max-width: 96vw;
-  }
-
-  #projects {
-    height: auto;
-    padding-bottom: 20px;
-    width: 100%;
-
-  }
-
-  #resume {
-    height: auto;
-    margin-top: 120px;
-    padding: 10px;
-  }
-
-  .narrow {
-    width: 95%;
-    margin: 10px;
-  }
-}
-
-
-
 button {
   border: 2px solid white;
   margin: 8px 15px;
@@ -464,6 +405,76 @@ button:hover {
 .checkout {
   margin: 7vh 0;
 }
+
+@media only screen and (max-width: 800px) {
+  .milowissig {
+    position: relative;
+    top: 25vh;
+    width: 75%;
+  }
+
+  #intro h2 {
+    font-size: 50px;
+    top: 60vh;
+    background: transparent;
+  }
+
+  iframe {
+    border: none;
+    border-radius: 0 !important;
+      box-shadow: none;
+  }
+
+  .video-placeholder {
+    width: 100vw;
+  }
+
+  header li {
+    font-size: 30px;
+  }
+
+  header ul {
+    width: 50%;
+  }
+
+  .split {
+    grid-template-columns: 100%;
+    grid-template-rows: 50vh 80vh;
+    margin-bottom: 20px;
+  }
+
+  #leftdiv {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  #projects {
+    height: 80vh;
+    padding-bottom: 20px;
+    width: 100%;
+z-index: 900;
+  }
+
+  #resume {
+    height: auto;
+    top: 230vh;
+    margin-top: 120px;
+    padding: 10px;
+    z-index: 800;
+  }
+
+  .narrow {
+    width: 95%;
+    margin: 10px;
+  }
+}
+.wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
 
 @media only screen and (max-width: 500px) {
   header {
