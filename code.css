@@ -80,16 +80,18 @@ section {
 
 #leftdiv {
   display: flex;
-  padding: 20px;
+  /* padding: 20px; */
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
   border-top-right-radius: 20px;
+
   justify-content: center;
 }
 
 iframe {
-  border: 10px solid #000;
-  border-radius: 20px !important;
+  border: 3px solid #000;
+  border-radius: 5px !important;
+    box-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
 .video-placeholder {
@@ -234,7 +236,6 @@ h3 {
 }
 
 #resume {
-  padding: 10px;
   padding-top: 70px;
   top: 200vh;
   position: absolute;
@@ -370,7 +371,7 @@ margin-bottom: 10px;
   text-align: center;
   opacity: 0.9;
   margin-top: 3em;
-  color: white;
+  color: gray;
 }
 
 .copyrights a {
@@ -453,8 +454,18 @@ button {
   padding: 8px 15px;
   border-radius: 5px;
   color: white;
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); */
+    font-family: 'BBB';
   background-color: rgba(0, 0, 0, 0.75);
+    font-variant: small-caps;
+}
+
+button:hover {
+
+  background-color: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);}
+
+.checkout {
+  margin: 7vh 0;
 }
 
 @media only screen and (max-width: 500px) {
