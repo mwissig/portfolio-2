@@ -257,7 +257,7 @@ h3 {
 }
 
 #projects li {
-  background-color: rgba(255, 255, 255, 0.125);
+  background-color: rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   border: 2px solid white;
   padding: 3px 5px;
