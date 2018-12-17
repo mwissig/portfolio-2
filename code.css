@@ -220,7 +220,7 @@ h3 {
   max-height: 100vh;
   /* height: 100vh; */
   overflow: hidden;
-  background: rgb(232, 218, 233);
+    background-color: rgb(218, 218, 218);
   color: rgb(66, 66, 66);
   padding-bottom: 30px;
 }
@@ -420,6 +420,7 @@ margin-bottom: 10px;
     height: auto;
     padding-bottom: 20px;
     width: 100%;
+
   }
 
   #resume {
