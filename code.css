@@ -378,6 +378,18 @@ margin-bottom: 10px;
   color: rgb(194, 194, 194);
 }
 
+footer {
+  position: absolute;
+  text-align: right;
+  bottom: 380vh;
+  left: 0;
+  z-index: 1000;
+  /* display: flex;
+  justify-content: space-between; */
+  width: 100%;
+  background-color: transparent;
+}
+
 @media only screen and (max-width: 800px) {
   .milowissig {
     position: relative;
@@ -392,11 +404,6 @@ margin-bottom: 10px;
   }
 
   header {
-    top: -60px;
-    left: -5%;
-    width: 110%;
-    height: 120px;
-    border-radius: 50%;
   }
 
   header li {
@@ -436,17 +443,7 @@ margin-bottom: 10px;
   }
 }
 
-footer {
-  position: absolute;
-  text-align: right;
-  bottom: 380vh;
-  left: 0;
-  z-index: 1000;
-  /* display: flex;
-  justify-content: space-between; */
-  width: 100%;
-  background-color: transparent;
-}
+
 
 button {
   border: 2px solid white;
@@ -470,11 +467,6 @@ button:hover {
 
 @media only screen and (max-width: 500px) {
   header {
-    top: -60px;
-    left: -5%;
-    width: 110%;
-    height: 120px;
-    border-radius: 50%;
   }
 
   header li {
