@@ -527,7 +527,28 @@ z-index: 900;
   display: flex;
 }
 
-
+@media only screen and (max-width: 600px) and (max-height: 600px) {
+  #intro h2 {
+margin-top: -15vh;
+font-size: 12px;
+  }
+  header li {
+    padding: 3px 5px;
+  }
+  button {
+      padding: 3px 5px;
+  }
+  #projects {
+    max-height: 300vh;
+    height: 250vh;
+  }
+  #projectInfo {
+    height: 200vh;
+  }
+  #resume {
+    top: 350vh;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   header {
