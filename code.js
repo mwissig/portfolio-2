@@ -86,48 +86,58 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-function initialize() {
-
-  // Update the controls on load
-  updateTimerDisplay();
-  updateProgressBar();
-
-  // Clear any old interval.
-  clearInterval(time_update_interval);
-
-  // Start interval to update elapsed time display and
-  // the elapsed part of the progress bar every second.
-  time_update_interval = setInterval(function() {
-    updateTimerDisplay();
-    updateProgressBar();
-  }, 1000)
-
-}
+function initialize() {}
 var extLink = "";
 var loginInfo = "";
 $('.thumbnail').on('click', function() {
 
   var url = $(this).attr('data-video-id');
-var title = $(this).attr('title');
+  var title = $(this).attr('title');
   player.cueVideoById(url);
   if (projects[title]['url'] != "") {
     extLink = "<p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
-  }
-  else {
+  } else {
     extLink = "";
   };
   if (projects[title]['username'] != "") {
     loginInfo = "<p>Demo username: " + projects[title]['username'] + "</p><p>Demo password: " + projects[title]['password'] + "</p>";
-  }
-  else {
-      loginInfo = "";
+  } else {
+    loginInfo = "";
   };
-document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + loginInfo + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p>" + extLink;
+  document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + loginInfo + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p>" + extLink;
 });
 
 function scrollToSection(section) {
   document.querySelector("#" + section).scrollIntoView({
-    behavior: 'smooth', block: 'start'
+    behavior: 'smooth',
+    block: 'start'
   });
   console.log("test");
 }
+
+
+//scroll animations
+var currentScrollHeight = 0;
+var animationDone = false;
+
+function section1(scroll_pos) {
+  if (currentScrollHeight > 2 * document.getElementById("intro").offsetHeight) {
+    footer.classList.add('visible');
+  }
+  else if (currentScrollHeight < 2 * document.getElementById("intro").offsetHeight) {
+    footer.classList.remove('visible');
+  }
+}
+
+
+window.addEventListener('scroll', function(e) {
+
+  currentScrollHeight = window.scrollY;
+
+  if (!animationDone) {
+    window.requestAnimationFrame(function() {
+      section1(currentScrollHeight);
+      animationDone = false;
+    });
+  }
+});

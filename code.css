@@ -57,9 +57,8 @@ a {
 }
 
 a:hover {
-  color: rgb(209, 209, 209);
+  color: rgb(255, 126, 71);
 }
-
 section {
   height: 100vh;
   width: 100%;
@@ -419,16 +418,23 @@ margin-bottom: 10px;
   color: rgb(194, 194, 194);
 }
 
-footer {
-  position: absolute;
+#footer {
+  position: fixed;
   text-align: right;
-  bottom: 380vh;
+  bottom: 0;
   left: 0;
   z-index: 1000;
-  /* display: flex;
-  justify-content: space-between; */
   width: 100%;
   background-color: transparent;
+}
+.footer {
+    visibility: hidden;
+  transition-property: visibility;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.visible {
+  visibility: visible;
 }
 
 button {
