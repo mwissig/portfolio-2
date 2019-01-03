@@ -108,18 +108,21 @@ iframe {
 
 .milowissig {
   position: relative;
-  top: 20vh;
+  top: 17vh;
 }
 
 .milowissig, .devicon {
   /* fill: black; */
-  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
+  /* filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5)); */
   transition-property: filter;
   transition-duration: .5s;
 }
+.sinatra {
+  height: 30px;
+}
 
 .milowissig:hover, .devicon:hover {
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+  /* filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8)); */
 }
 
 .blur {
@@ -135,7 +138,7 @@ iframe {
 .devicon {
   font-size: 30px;
   color: rgb(25, 25, 25);
-  text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.5); */
 }
 
 .ruby {
@@ -218,11 +221,13 @@ h3 {
   max-height: 100vh;
   /* height: 100vh; */
   overflow: hidden;
-    background-color: rgb(218, 218, 218);
-  color: rgb(66, 66, 66);
+    background: linear-gradient(rgb(20, 20, 20), black);
+  color: rgb(210, 220, 223);
   padding-bottom: 30px;
 }
-
+#projects a:link, #projects a:visited {
+  color: white;
+}
 #intro {
   background-color: white;
   top: 0;
@@ -330,7 +335,17 @@ margin-bottom: 10px;
   align-items: center;
   height: 3.2em;
 }
-
+#projects .flexlist hr {
+  border-top: 1px dashed rgb(194, 194, 194);
+  margin: 0 auto;
+  margin-top: 3px;
+  width: 50%;
+}
+#projects .flexlist small {
+  font-variant: small-caps;
+  font-size: -2;
+  margin-top: 0;
+}
 .flexlist li:hover {
   color: rgb(212, 212, 212);
   cursor: pointer;
@@ -404,19 +419,19 @@ button:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);}
 
 .checkout {
-  margin: 7vh 0;
+  margin: 7% 0;
 }
 
 @media only screen and (max-width: 800px) {
   .milowissig {
     position: relative;
-    top: 25vh;
+    top: 25%;
     width: 75%;
   }
 
   #intro h2 {
     font-size: 50px;
-    top: 60vh;
+    top: 60%;
     background: transparent;
   }
 
@@ -498,6 +513,6 @@ z-index: 900;
 
   #intro h2 {
     font-size: 30px;
-    top: 60vh;
+    top: 60%;
   }
 }
