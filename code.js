@@ -86,26 +86,27 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-function initialize() {}
-var extLink = "";
-var loginInfo = "";
-$('.thumbnail').on('click', function() {
+function initialize() {
+  var extLink = "";
+  var loginInfo = "";
+  $('.thumbnail').on('click', function() {
 
-  var url = $(this).attr('data-video-id');
-  var title = $(this).attr('title');
-  player.cueVideoById(url);
-  if (projects[title]['url'] != "") {
-    extLink = "<p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
-  } else {
-    extLink = "";
-  };
-  if (projects[title]['username'] != "") {
-    loginInfo = "<p>Demo username: " + projects[title]['username'] + "</p><p>Demo password: " + projects[title]['password'] + "</p>";
-  } else {
-    loginInfo = "";
-  };
-  document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + loginInfo + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p>" + extLink;
-});
+    var url = $(this).attr('data-video-id');
+    var title = $(this).attr('title');
+    player.cueVideoById(url);
+    if (projects[title]['url'] != "") {
+      extLink = "<p><a href='" + projects[title]['url'] + "' target='_blank'>Go to Site  <small> <i class='fas fa-external-link-alt'></i></a></small></a>";
+    } else {
+      extLink = "";
+    };
+    if (projects[title]['username'] != "") {
+      loginInfo = "<p>Demo username: " + projects[title]['username'] + "</p><p>Demo password: " + projects[title]['password'] + "</p>";
+    } else {
+      loginInfo = "";
+    };
+    document.getElementById("projectInfo").innerHTML = "<h2>" + projects[title]['name'] + "</h2>" + loginInfo + projects[title]['description'] + "<p><a href='" + projects[title]['github'] + "' target='_blank'>Documentation on Github  <small> <i class='fas fa-external-link-alt'></i></a></small></a></p>" + extLink;
+  });
+}
 
 function scrollToSection(section) {
   document.querySelector("#" + section).scrollIntoView({
