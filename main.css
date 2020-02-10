@@ -1,0 +1,492 @@
+.rocketshadowflutter a {
+  color: rgb(85, 10, 0) !important;
+}
+
+html {}
+
+body {
+  height: auto;
+  margin: 0;
+  background: radial-gradient(transparent, black), linear-gradient(transparent, white, transparent), url(images/rose.jpg);
+  background-size: cover;
+  transition: all .5s linear;
+  font-family: 'Dosis', sans-serif;
+}
+
+.artbg {
+  background: radial-gradient(transparent, black), linear-gradient(transparent, rgba(255, 255, 255, 0.5), transparent), url(images/art/026.jpg);
+  background-size: cover;
+}
+
+.codebg {
+  background: radial-gradient(transparent, black), linear-gradient(transparent, rgba(255, 255, 255, 0.5), transparent), url(images/phone.png);
+  background-size: cover;
+}
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+max-height: 315px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+height: : 315px;
+width: 100%;
+overflow: hidden;
+}
+h1, h2 {
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.fronttitle a {
+  background-color: transparent;
+  color: black;
+}
+.fronttitle {
+  background: none;
+  font-size: 60px;
+  font-weight: normal;
+}
+.fronttitle .art {
+  font-size: 60px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+#flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  width: 100%;
+  font-size: 100px;
+  font-weight: normal;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0 1px 5px black;
+  background-color: black;
+  color: white;
+  background-image: url("images/crabnebula.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  margin-top: 100vh;
+  padding-top: 0;
+}
+.projects {
+  padding: 20px 0;
+}
+a {
+  color: rgb(255, 143, 52);
+  text-decoration: none;
+}
+
+.code {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.art {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.horizsplit {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.codegridOuter {
+  display: grid;
+  grid-auto-rows: 315px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  grid-row-gap: 10px;
+}
+
+.codegridInner {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.codegridOuter .codegridInner:nth-child(odd) {
+  grid-template-columns: 560px auto;
+}
+
+.codegridOuter .codegridInner:nth-child(odd) div:nth-child(even) {
+  background-color: rgb(152, 177, 167);
+  overflow-y: scroll;
+  max-height: 315px;
+}
+
+p {
+  margin: 20px;
+}
+
+.codegridOuter .codegridInner:nth-child(even) {
+  grid-template-columns: auto 560px;
+}
+
+.aboutandcontact {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  z-index: 1000;
+  width: 40vw;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Carter One', cursive;
+  position: relative;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+h4, h5, h3 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family: 'Carter One', cursive;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h5 {
+  font-size: 20px;
+    margin: 5px;
+}
+h4 {
+  margin: 8;
+}
+h3 {
+  font-size: 40px;
+  margin: 5px;
+}
+
+.codegridOuter .codegridInner:nth-child(even) div:nth-child(odd) {
+  background-color: rgb(152, 177, 167);
+  overflow-y: scroll;
+  max-height: 315px;
+}
+
+#gray {
+  background-color: #ECE7E5;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.thumbnail:hover {
+  box-shadow: 2px 2px 2px #1D0E16;
+}
+
+#bgstrip {
+  position: relative;
+}
+
+#bgimage {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#bgtext {
+  z-index: 100;
+  position: relative;
+  color: white;
+  bottom: 20px;
+  text-shadow: 2px 2px 2px #1D0E16;
+}
+
+.codegridOuter .codegridInner:nth-child(even) div:nth-child(odd)::-webkit-scrollbar {
+  width: 1em;
+}
+
+.codegridOuter .codegridInner:nth-child(even) div:nth-child(odd)::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.codegridOuter .codegridInner:nth-child(even) div:nth-child(odd)::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 89, 89);
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.codegridOuter .codegridInner:nth-child(odd) div:nth-child(even)::-webkit-scrollbar {
+  width: 1em;
+}
+
+.codegridOuter .codegridInner:nth-child(odd) div:nth-child(even)::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.codegridOuter .codegridInner:nth-child(odd) div:nth-child(even)::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 89, 89);
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#codepage {
+  background: linear-gradient(rgb(14, 9, 26), black);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  padding-bottom: 100px;
+  overflow: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+.codegridInner ul {
+  padding: 20px;
+}
+
+#codepage {
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: rgb(2, 13, 46);
+  z-index: 1100;
+  padding: 2px;
+}
+
+button {
+  position: absolute;
+  bottom: -8vh;
+  left: 16vw;
+  background-color: rgb(232, 104, 0);
+  font-family: 'BenchNine', sans-serif;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 3px black, 0 0 0 transparent, 0 0 0 transparent;
+  transition: all .7s;
+}
+a {
+  text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  transition: all .7s;
+
+}
+a:hover {
+      text-shadow: 00 40px 20px rgba(255, 159, 98, 0.5), 0 5px 5px rgba(255, 213, 98, 1);
+}
+button:hover {
+      box-shadow: 0 0 3px black, 0 40px 20px rgba(255, 159, 98, 0.5), 0 5px 5px rgba(255, 213, 98, 1);
+}
+
+.earth {
+  filter: drop-shadow(0px 0px 150px rgb(2, 13, 46)) drop-shadow(0px 0px 50px rgb(50, 133, 130));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* the animation that makes the earth rotate */
+
+.spin {
+  animation-name: earthRotation;
+  animation-duration: 360s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* the animation that makes the earth drop off the screen */
+
+.flyaway {
+  animation-name: launch;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.earthcontainer {
+  position: relative;
+  top: 1vh;
+  left: -10vw;
+  z-index: 100;
+}
+
+/* the animation that creates orange shadows under the text */
+
+.rocketshadow {
+  animation-name: rockettext;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.rocketshadowflutter {
+  animation-name: rocketbox;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+/*kefyrames for the animation that makes the earth rotate */
+
+@keyframes earthRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* keyframes for the animation that makes the earth drop off the screen */
+
+@keyframes launch {
+  from {
+    top: -10vh;
+  }
+  to {
+    top: 110vh;
+  }
+}
+
+/* keyframes for the animation that creates orange shadows under the text */
+
+@keyframes rockettext {
+  from {
+    text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  }
+  to {
+    text-shadow: 0 40px 20px rgba(255, 159, 98, 0.5), 0 5px 5px rgba(255, 213, 98, 1);
+  }
+}
+@keyframes rocketbox {
+  from {
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 40px 20px rgba(255, 159, 98, 0.1), 0 5px 5px rgba(255, 213, 98, .4);
+  }
+}
+.white {
+  color: white;
+}
+@media only screen and (max-width: 900px) {
+  .codegridInner {
+    grid-template-columns: 100%;
+    grid-template-rows: 315px 315px;
+  }
+  .codegridOuter .codegridInner:nth-child(even) {
+    grid-template-columns: 100%;
+        grid-template-rows: 315px 200px;
+  }
+.codegridOuter .codegridInner:nth-child(odd) {
+  grid-template-columns: 100%;
+      grid-template-rows: 315px 200px;
+}
+.codegridOuter .codegridInner:nth-child(even) div:nth-child(even) {
+  grid-row: 1;
+}
+.codegridOuter {
+  grid-auto-rows: auto;
+  width: 560px;
+}
+h3 {
+  margin: 3px;
+
+}
+h4 {
+    font-size: 20px;
+}
+.aboutandcontact {
+  width: 80%;
+  left: 10%;
+  margin: 0 auto;
+}
+button {
+ left: 25vw;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+height: 100%
+}
+}
+@media only screen and (max-width: 560px) {
+  .codegridOuter {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .codegridInner {
+    max-width: 80vw;
+  }
+  .codegridOuter .codegridInner:nth-child(even) {
+    grid-template-columns: 100%;
+        grid-template-rows: auto 200px;
+  }
+.codegridOuter .codegridInner:nth-child(odd) {
+  grid-template-columns: 100%;
+      grid-template-rows: auto 200px;
+}
+  .earthcontainer {
+    top: -10vh;
+    left: -90vw;
+  }
+  .video-container {
+    max-width: 80vw;
+  }
+}
