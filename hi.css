@@ -146,6 +146,9 @@ height: auto;
   width: 40vw;
   margin: 1em auto;
 }
+iframe {
+  max-width: calc(100% - 2em);
+}
 
 @media only screen and (max-width: 560px) {
   body {
