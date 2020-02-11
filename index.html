@@ -3,274 +3,234 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="code.css">
+  <link rel="stylesheet" type="text/css" href="hi.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lalezar|Arimo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title>Milo Wissig - Web Developer - Portfolio</title>
+  <title>Milo Wissig - Web Developer - Portfolio</title>
   <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<link rel="shortcut icon" href="favicon.ico" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Milo Wissig - Web Developer">
+<meta property="og:description" content="Full stack web developer making stuff with Rails. Currently working on multiplayer online games.">
+<meta property="og:image" content="thumbnail image, 1200x630 under 1 mb">
+<meta property="og:url" content="http://www.mwissig.com">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
-  <header>
-    <ul class="flexlist">
-      <li onclick=scrollToSection('intro')>Home</li>
-      <li onclick=scrollToSection('projects')>Projects</li>
-      <li onclick=scrollToSection('resume')>Resume</li>
-    </ul>
-  </header>
-  <section id="intro">
 
+  <div id="main">
+    <h1>Hi.</h1>
+    <h2>I'm Milo.</h2>
+    <h3>I'm a web developer.</h3>
+    <div>
+      <h4>This is what I'm working on now: <div id="firstcaret"><i class="fas fa-caret-down" onclick="expandOne()"></i></div>
+      </h4>
+    </div>
+    <div id="first" class="collapsed">
+      <div class="imagecontainer floatright"><img src="images/tictactoe.gif"></div>
+      <p>
+        I've been teaching myself to program multiplayer online games from scratch in Rails using ActionCable and simple DOM manipulation with JavaScript. I'm not looking at documentation for gaming for this project; just trying to figure out how far
+        I can push technology I'm already using: sure, I'm going about making a game the wrong way entirely, but what happens if I do it anyway? This project is called <a href="https://crepuscular.herokuapp.com/" target="_blank">Crepuscular Games</a>; and modeled after sites like Neopets where points and items earned in games could be used
+        across the site as parts of other games, and Twitch, where spectators can comment on games in-progress.</p>
 
-    <div class="content">
-      <h1>
-        <svg class="milowissig" version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="50vw" height="331.144" viewBox="0 0 1172.138 331.144" overflow="visible" enable-background="new 0 0 1172.138 331.144" xml:space="preserve">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" style="stop-color:rgb(40, 40, 40);stop-opacity:1" />
-              <stop offset="100%" style="stop-color:rgb(25, 25, 25);stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <g fill="url(#grad1)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M342.727,6.126c5.181,2.114,4.331,13.428,0.931,16.792
-       c0.942,31.757-4.445,65.179-14.924,88.621c0.173,10.933-6.982,25.164,0.933,32.649c7.398,0.843,13.127-1.667,18.658,0
-       c-4.39,9.505-12.012,15.131-21.457,21.455c-3.865,2.588-3.772,4.5-7.461,4.664c-8.976,0.399-14.544-10.377-14.925-20.522
-       c-0.445-11.851,5.185-26.718,9.33-41.978c6.368-23.452,8.051-47.513,8.394-76.494c-16.8,9.317-30.943,21.294-44.775,33.582
-       c-3.21,30.061-10.178,56.366-15.859,83.957c-0.559,4.913,6.922,1.783,6.53,6.53c-8.613,5.69-9.703,18.903-23.321,19.59
-       c6.02-45.293,13.944-96.751,21.455-143.658c-12.4,1.59-19.26,16.486-28.917,25.187c-4.146,3.734-10.233,4.781-13.06,10.261
-       c-3.476,6.743-3.592,17.217-5.597,26.12c-5.575,24.754-13.369,50.218-18.657,73.695c-4.907,3.798-8.242,9.171-14.927,11.193
-       c11.421-28.991,15.349-64.951,17.724-100.746c0.998-15.017,10.127-30.881,3.732-44.776c-45.49,12.402-86.908,40.276-125.935,64.366
-       c-22.234,13.726-57.281,30.971-79.291,6.53c-5.184-26.997,5.568-48.517,23.321-65.299c6.19-5.852,24.085-22.429,29.852-21.456
-       C59.91,17.305,61,22.94,60.076,28.514c-1.568,9.451-24.836,25.095-30.784,34.516c-2.556,4.049-7.167,13.412-4.665,21.456
-       c1.87,6.01,14.692,9.982,24.254,9.328C63.16,92.838,82.527,82.89,96.457,75.157c28.324-15.723,55.918-32.01,87.687-43.844
-       c15.422-5.745,30.996-14.72,49.441-13.993c2.34,12.09-2.363,22.509-4.666,34.514c12.946-3.121,20.169-18.37,31.718-27.051
-       c4.174-3.139,9.728-4.429,13.992-7.463c3.593-2.559,6.034-8.385,11.194-7.463c2.818,13.875-6.572,23.151-5.597,38.247
-       C301.537,34.589,318.516,16.742,342.727,6.126z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M640.305,31.962c9.474,22.135-13.25,43.599-18.658,68.097
-       c-2.18,9.875-4.746,22.583-4.664,31.718c0.074,8.334,1.45,19.862,6.529,23.321c5.344,3.636,18.97,2.934,24.254,0
-       c5.664-3.144,6.123-10.38,10.263-13.06c1.042-34.405,9.44-61.456,15.857-90.486c4.136-4.143,12.536-10.123,17.725-7.463
-       c5.526,27.772-23.371,72.433-9.33,102.613c2.169,4.661,5.609,6.949,11.197,9.329c4.699-0.584,6.018-4.554,9.327-6.53
-       c-3.216-28.955,11.023-53.584,17.723-76.493c2.329-7.964,2.24-16.386,5.597-21.456c8.03-12.123,27.346-13.492,40.113-18.657
-       c-4.837,8.534-14.696,12.044-20.522,19.59c-8.266,32.372-46.46,105.434,16.791,101.68c-10.057,13.882-44.261,23.939-55.969,4.664
-       c-10.923,6.136-26.231,15.878-42.913,10.261c-2.539-3.991-4.04-9.019-5.596-13.992c-12.647,9.684-21.303,27.479-46.645,21.453
-       c-5.181-8.165-10.599-26.357-11.192-40.11c-1.179-27.35,12.389-51.938,16.791-75.561c-9.99,1.43-13.114,20.698-25.188,11.194
-       c2.518-10.542,13.374-12.746,17.726-21.455C620.377,44.995,624.782,32.918,640.305,31.962z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M977.059,68.207c15.229,18.484-7.592,32.844-18.653,41.978
-       c16.045,5.49,28.992,18.818,18.653,34.515c-3.983,6.052-30.56,27.325-39.178,30.784c-12.186,4.893-43.814,2.276-44.776-11.193
-       c-0.716-10.019,14.272-15.594,19.589-22.388c2.872,15.519,31.018,19.683,43.845,11.194c1.989-10.889-4.899-21.451-16.792-22.388
-       c-9.823-0.774-23.199,7.44-28.917-2.799c-1.136-4.152-1.016-9.558-0.933-14.925c13.07-18.648,31.115-37.291,51.308-45.709
-       C965.042,68.476,972.122,66.146,977.059,68.207z M956.539,87.797c-6.523-1.675-15.794,0.638-20.521,3.731
-       c-2.639,4.515-3.822,10.484-4.665,16.791c4.633,6.959,15.379,3.935,23.321,3.732C957.118,105.08,960.366,95.792,956.539,87.797z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M892.172,84.219c-1.554,13.994-11.965,19.129-22.389,24.253
-       c-2.797-7.852-5.633-16.823-13.061-16.79c-6.718,0.028-9.74,9.206-14.926,13.06c1.723,18.887,25.735,3.216,39.181,9.327
-       c6.61,3.005,5.03,9.972,11.194,13.994c3.619,16.382-4.964,19.746-16.791,28.917c-10.921,8.47-21.313,17.205-30.783,19.589
-       c-12.336,3.106-24.261,0.353-26.12-10.26c4.828-7.921,8.348-17.148,16.79-21.456c5.469,1.949,3.735,8.444,10.264,11.194
-       c9.806,4.133,23.237,0.508,23.318-8.396c0.076-8.241-8.337-9.558-13.06-14.924c-19.012,2.967-37.58,3.972-37.313-13.06
-       c0.131-8.452,4.677-7.483,10.262-13.994c2.228-2.597,2.861-6.327,4.664-8.396c11.835-13.584,30.754-26.396,43.841-24.253
-       C882.175,73.831,887.935,79.118,892.172,84.219z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M507.84,89.648c19.086,0.286,43.532,21.225,30.785,41.046
-       c-2.95,4.585-11.074,7.613-15.858,13.992c-1.735,2.313-1.926,6.289-3.732,8.396c-4.769,5.563-13.35,7.609-15.858,12.126
-       c-14.36,0.187-22.309,15.283-39.181,12.127c-18.186-3.401-17.069-26.761-7.462-43.843
-       C467.781,113.496,488.915,100.244,507.84,89.648z M474.257,123.23c-0.512,9.321-6.981,13.505-4.663,23.321
-       c4.807,20.36,40.529,3.58,49.441-3.731c4.678-17.651-11.861-32.927-27.986-32.649C484.003,113.076,479.542,118.564,474.257,123.23z
-       " />
-            <g>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1026.502,69.56c-5.089,7.35-14.188,10.689-20.521,16.791
-         c-5.884-4.068-10.528-9.374-13.061-16.791c8.212-3.915,14.598-9.657,21.453-14.926
-         C1020.529,57.499,1023.837,63.209,1026.502,69.56z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1016.24,91.948c1.828,20.675-12.342,47.369-2.798,67.165
-         c5.154,0.852,7.887-0.548,11.195,0.933c-7.624,8.859-16.017,16.944-31.717,17.723c-14.252-15.458-1.164-46.084-0.933-67.165
-         c0.667-1.512-4.401-1.512-3.731,0c-1.505-2.478,4.689-5.228,7.462-6.529C1000.166,97.639,1006.506,93.097,1016.24,91.948z" />
-            </g>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1124.45,71.892c2.076,6.269-3.254,12.106-5.595,18.657
-       c-4.965,13.879-17.667,65.826-9.33,80.692c7.349,13.104,28.145,19.046,39.18,30.781c10.425,11.088,24.854,35.096,23.321,58.771
-       c-1.219,18.814-12.387,37.995-25.188,48.506c-8.659,7.112-25.48,15.422-36.381,18.658c-13.408,3.979-36.255,3.775-52.238,1.866
-       c-16.188-1.933-34.932-10.048-49.441-18.659c-14.432-8.557-29.72-16.604-41.978-25.185c-30.62-21.434-64.868-37.853-112.873-39.178
-       c-7.799,8.135-15.864,21.01-13.061,32.649c2.9,12.053,15.368,11.228,21.455,20.521c-9.474,15.462-40.823,11.946-44.776-4.662
-       c-3.566-14.979,9.782-34.883,20.521-42.913c10.318-7.714,28.041-15.462,40.113-14.926c5.467,0.242,13.535,3.446,20.521,4.664
-       c12.682,2.211,23.655,3.943,34.514,8.396c44.303,18.162,80.927,52.097,125.937,66.23c12.61,3.963,22.161,2.593,35.446,2.799
-       c6.675,0.106,14.424,2.135,20.524,0.935c15.864-3.125,31.463-31.912,31.716-50.375c0.175-12.688-5.197-25.593-8.396-32.649
-       c-5.25-11.59-13.134-20.726-22.387-28.918c-13.125-11.622-34.217-15.07-36.381-38.247c-16.139,6.194-41.619,9.14-44.777-10.261
-       c-1.794-11.02,11.737-48.047,17.725-56.437c7.106-9.958,24.634-21.097,36.382-23.322c4.557-0.862,8.181,1.381,12.126,0.934
-       c8.869-1.007,14.029-7.387,22.389-9.329C1123.829,71.892,1124.139,71.892,1124.45,71.892z M1086.204,84.019
-       c-5.643,9.807-29.352,46.295-26.12,62.035c1.28,6.233,9.544,15.955,19.591,11.193c-1.053-20.047,13.201-56.257,15.859-69.496
-       C1094.354,84.575,1090.224,84.352,1086.204,84.019z" />
-            <g>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M390.301,55.758c4.682,2.78,6.059,8.868,10.261,12.126
-         c-1.885,13.378-31.094,25.307-31.715,2.799C373.171,62.881,381.373,58.955,390.301,55.758z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M382.839,153.706c0.798,4.8,7.232,3.962,10.262,6.531
-         c-3.966,11.177-14.29,20.238-29.852,16.79c-9.301-16.795,4.417-38.605,2.799-59.703c6.708-5.73,13.404-11.473,20.522-16.791
-         C401.959,113.165,386.847,138.242,382.839,153.706z" />
-            </g>
-            <g>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M812.879,72.318c-5.061,6.753-12.87,10.76-19.589,15.859
-         c-5.013-3.693-9.597-7.817-12.127-13.994c8.301-3.83,15.247-13.976,23.321-14.925C809.071,61.824,811.557,66.49,812.879,72.318z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M815.679,160.006c-2.562,3.32-7.273,5.882-11.194,9.328
-         c-1.729,1.52-13.182,9.051-19.589,8.396c-19.001-1.944-10.479-40.767-5.599-55.039c-0.177-0.754-0.935-0.929-0.933-1.865
-         c-0.938-3.709-5.621-0.895-8.394-0.933c8.202-8.277,17.948-15.011,28.915-20.523C812.363,106.506,776.355,165.327,815.679,160.006
-         z" />
-            </g>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M456.534,0c2.705,13.507-3.043,26.951-7.462,40.113
-       c-8.376,24.946-16.487,50.643-24.254,78.358c-3.519,12.554-9.222,29.146,0,40.113c9.405,0.896,15.093-6.519,22.388-4.665
-       c-1.578,5.989-13.483,9.45-17.724,15.858c-9.018,2.2-21.148,14.277-28.919,3.731c-0.874-30.144,10.842-54.226,16.792-79.291
-       c2.863-12.063,3.782-23.511,7.463-35.448c3.322-10.78,7.97-21.507,8.395-33.583c-3.646-3.575-13.97,6.851-12.126,2.798
-       C431.904,17.659,441.92,6.531,456.534,0z" />
-          </g>
-        </svg>
-        </p>
-      </h1>
-        <h2>
-          Brooklyn-based full-stack web developer
-      </h2>
-      <h3>Object-oriented programming with JavaScript & Ruby on Rails</h3>
-      <button class="checkout animated infinite pulse" onclick=scrollToSection('projects')>Check out my work<br><i class="fas fa-chevron-down"></i></button>
+      <p>I started by creating site-wide chat rooms using ActionCable that could be accessed from different areas: individual games have their own chat rooms, and there is also a "lobby" chat for the entire site. In Rails, ActionCable allows newly
+        recieved data to be seen by users without refreshing the page, by allowing those changes to be made with CoffeeScript.</p>
+
+      <p>I had been thinking about how to use ActionCable, something I'd only used to make chat rooms in the past, to make a multiplayer game. I constructed a tic-tac-toe game using the same basic principles as the chat room, using ActionCable to
+        send data about game moves instead of chat messages. However, a web site where you can watch your friends play tic-tac-toe admittedly isn't very exciting.</p>
+      <div class="imagecontainer floatleft"><img src="images/mine.gif"></div>
+      <p>The next step up from tic-tac-toe was to expand the grid to a relatively massive interactive environment that players could explore and modify with keyboard-controlled characters. Typically, a Javascript-based game would be made with Canvas,
+        but what happens when you use a CSS grid? It works on the same principles as tic tac toe: each tile is simply a nested div with class names for the foreground and background, and rules for interacting with it are defined, in JavaScript, based
+        on those class names. The coordinates and class names of the tiles are recorded in the database, as well as the coordinates of the player sprite. It was like an extremely pared-down Terraria. This is still pretty buggy, especially the
+        controls, but players are able to see one another and make permanent changes to the board. I made all of the image assets for the game as well. In the future, players will be able to keep items they dig up in the mining game and there may be
+        a crafting section.</p>
+      <p>The project also gave me the opportunity to get familiar with scheduling automated tasks to clear old chat messages and trigger in-game events, incorporating WYSIWYG editors, email verification, and password recovery in Rails.<p>
+          <p>It is very much a work in progress, and players are constantly finding new ways of breaking entire sections of the site.</p>
+          <p><a href="https://crepuscular.herokuapp.com/" target="_blank">Visit Crepuscular Games</a></p>
+<p>          <a href="https://github.com/mwissig/crepuscular" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+                <h6>If you would like to test it without creating an account, you may use the email <span class="emph">user@example.com</span> and the password <span class="emph">password</span> to log in.</h6>
+    </div>
+    <div>
+      <h4>Here are some other things I've done: <div id="secondcaret"><i class="fas fa-caret-down" onclick="expandTwo()"></i></div>
+      </h4>
 
     </div>
-  </section>
-
-<section id="newprojects">
-
-    <h2>Here's what I'm working on now:</h2>
-    <p>
-      I've been teaching myself to program multiplayer online games from scratch in Rails using ActionCable and simple DOM manipulation with JavaScript. I'm not looking at documentation for gaming for this project; just trying to figure out how far I can push technology I'm already using. This project is called Crepuscular Games; and modeled after sites like Neopets where points and items earned in games could be used across the site as parts of other games.</p>
-      <p>I started by creating site-wide chat rooms using ActionCable that could be accessed from different areas: individual games have their own chat rooms, and there is also a "lobby" chat for the entire site. In Rails, ActionCable allows newly recieved data to be seen by users without refreshing the page, by allowing those changes to be made with JacvaScript.</p>
-      <p>I had been thinking about how to use ActionCable, something I'd only used to make chat rooms in the past, to make a multiplayer game. I constructed a tic-tac-toe game using the same basic principles as the chat room, using ActionCable to send data about game moves instead of chat messages.</p>
-      <p>The next step up from tic-tac-toe was to expand the grid to a massive interactive environment that players could explore and modify with keyboard-controlled characters. It was like an extremely pared-down Terraria. This is still pretty buggy, but players are able to see one another and make permanent changes to the board. I made all of the image assets for the game as well. In the future, players will be able to keep items they dig up in the mining game and there may be a crafting section.</p>
-      <p>There are also pets, a slot machine, and a basic messaging system.
-    </p>
-</section>
-
-
-
-  <section id="projects">
-    <div class="split">
-      <div id="leftdiv">
-      <div id="video-placeholder"></div>
-    </div>
-      <script src="https://www.youtube.com/iframe_api"></script>
-      <div class="controls">
-        <h2>Projects</h2>
-        <ul class="flexlist wrap">
-          <li class="thumbnail" data-video-id="kYTy2r_U9HM" title="juriedshow"><div><div>Juried Show<small><hr>Art Game</small></div></li>
-          <li class="thumbnail" data-video-id="_pUyfrStqE0" title="artcrawler"><div><div>Artcrawler<small><hr>Event Mapping</small></div></li>
-          <li class="thumbnail" data-video-id="ozqyQFDTA2A" title="opengym"><div>OpenGym<small><hr>Game Scheduling</small></div></li>
-          <li class="thumbnail" data-video-id="WTvAcPI1O7U" title="postpile"><div>Postpile<small><hr>Social Media</small></div></li>
-          <li class="thumbnail" data-video-id="3Cxvzxvm0mo" title="satpanel"><div>Admin Panel<small><hr>User Management</small></div></li>
-          <li class="thumbnail" data-video-id="2ux6p9ESjwE" title="paper"><div>Paper Co.<small><hr>JS Animation</small></div></li>
-          <li class="thumbnail" data-video-id="evTha1zuoko" title="bakery"><div>Bakery<small><hr>Dynamic Content</small></div></li>
-        </ul>
-        <div id="projectInfo"></div>
+    <div id="second" class="collapsed">
+      <h6>For any of these projects that require login credentials, you may use the username <span class="emph">User</span> or the email address <span class="emph">user@example.com</span> and the password <span class="emph">password</span>.</h6>
+      <div class="imagecontainer floatleft"><img src="images/juriedshow.gif"></div>
+      <p><a href="https://juriedshow.herokuapp.com/" target="_blank">Juried Show</a> is a little art toy I made in Rails to experiment with methods of encoding images as strings: what could I do to allow users to play with images without having to pay for hosting? It generates randomized coordiates and colors via a set of algorithms and plugs them into a series of SVG curves, creating simple vector drawings that resemble abstract expressionist paintings, then allows users to title their art and vote for which painting is the best, and download them as PNGs. An alternate version of the site allows users to make the images in black and white, with alternate math geared toward bigger, bolder shapes.</p>
+      <p>          <a href="https://github.com/mwissig/juriedshow" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+      <div class="imagecontainer floatright"><img src="images/kalimba.gif"></div>
+      <p>Along similar lines I also made a simple <a href="https://thumbpiano.herokuapp.com/" target="_blank">thumb piano app</a> to attempt encode music as a string. The app is buggy, and has caused problems with the sound on my computer after using it: I have to restart my computer to play other audio and video. But the basic principle works. Each recorded song is just a list of notes and the amount of time that passes between notes. The audio also does not sound very good, but since I have no musical talent, it makes little difference to me: I am pleased that the discordant noise in the recording sounds the same as it did when I initially pressed the keys.</p>
+            <p>          <a href="https://github.com/mwissig/thumbpiano" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+      <div class="imagecontainer floatleft"><iframe width="560" height="315" src="https://www.youtube.com/embed/_pUyfrStqE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-
-  </section>
-  <section id="resume" class="push">
-    <div class="narrow">
-      <h2 id="resumetop">Resume</h2>
-      <h3 id="contact">Contact Me</h3>
-      <p class="name">
-        Milo Wissig<br>
-        Brooklyn, NY
+      <a href="https://artcrawler.herokuapp.com/" target="_blank">ArtCrawler</a> is an app I designed to make art events easier to navigate. During an open studios event or art walk, people from all over a given city or neighborhood will visit
+      artists' studios and galleries. Typically they will have a printed guide with maps, or build a new app for each event. ArtCrawler was designed to be a reusable app for these events; allowing event organizers to add multiple events, which
+      contain multiple locations, which can include multiple artists. Visitors can bookmark artists they want to see, which creates custom routes using Google Waypoints to help them decide the best route between all the studios they want to see, while helping them stay connected to the artists they want to remember. It uses the Google Maps API. The app is currently populated with fake information.</p>
+      <p>          <a href="https://github.com/mwissig/artcrawler" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+            <div class="imagecontainer floatright"><img src="images/palcoves.png"></div>
+      <p><a href="https://palcoves.herokuapp.com/" target="_blank">Palcoves</a> is a social media site I made in Rails. It was an experiment in discouraging passive interaction by requiring a minimum text statement with every action: you can't simply "like" a post. Nostalgia for the personalization options of the pre-social media internet led me to allow extensive styling options for posts and signatures: also, nostalgia for old web sites that allowed users to insert their own HTML or CSS into text fields, the feature that led me to learn basic web development skills as a kid to begin with. The result is that users have a right to make their content absolutely hideous, which for a change of pace, is charming: the users have control. Anonymity and control of multiple accounts was also a key feature: users could have multiple usernames and easily see which of their aliases they were using to interact with others. Posts would automatically become private after a set period of time unless they were saved into a user's archives. New account creation is currently down due to changes in GMail's security policies; making it no longer suitable as an automated mailer.
       </p>
-      <ul class="flexlist wrap">
-        <li><i class="fas fa-envelope"></i><a href="mailto:mwissig@gmail.com"> mwissig@gmail.com</a></li>
-        <li><i class="fas fa-link"></i><a onclick=scrollToSection('projects')> Portfolio</a></li>
-        <li><i class="fab fa-github"></i> <a href="http://github.com/mwissig" target="_blank"> Github</a></li>
-        <li><i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig" target="_blank"> Linkedin</a></li>
-      </ul>
+            <p>          <a href="https://github.com/mwissig/palcoves" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <p>I had made a similar project earlier, essentially a Tumblr clone but without image upload capabilities, before I learned Rails, in Sinatra: <a href="http://postpile.herokuapp.com/" target="_blank">Postpile</a>.</p>
+            <p>          <a href="https://github.com/mwissig/Postpile" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+                  <div class="imagecontainer floatleft"><img src="images/adminpanel.gif"></div>
+      <p>A <a href="https://sat-panel.herokuapp.com/" thttps://sat-panel.herokuapp.com/arget="_blank">mock-up administration panel for a school</a>, made in Rails. Rather than name the school, it uses the Faker gem to name it after a random Star Wars species on every refresh. I focused on trying to fit make the most information accessible on the fewest amount of pages using collapsible menus and displaying information in forms. The site has a hierarchy of users that determines who can access and edit what information.</p>
+            <p>          <a href="https://github.com/mwissig/School-Admin-Panel" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+                        <div class="imagecontainer floatright"><img src="images/coldplay.gif"></div>
       <p>
-        Full stack web developer with a background in painting, printmaking, and digital print design and production.</p>
-      <h3>Skills</h3>
-      <div class="skillsgrid flexlist wrap">
-        <div><i class="devicon html devicon-html5-plain-wordmark"></i><br>HTML5</div>
-        <div><i class="devicon css devicon-css3-plain-wordmark"></i><br>CSS3</div>
-        <div><i class="devicon js devicon-javascript-plain"></i><br>JavaScript</div>
+      <a href="http://coldplaycrybaby.com/" target="_blank">ColdplayCrybaby.com</a>: this is a site I was commissioned to do before I really learned anything about web development, and inspired by Geocities sites and LiveJournal from the late 90s and early 00s; the kind of web sites I made and saw when I was 12. It was featured on the podcast <a href="https://maximumfun.org/podcasts/my-brother-my-brother-and-me/" target="_blank">"My Brother, My Brother and Me,"</a> and created as part of an ongoing bit that occurred in four episodes. It's a love letter to bad design: intentionally broken gifs, autoplaying audio, spinning skulls: all the stuff we're not allowed to play with anymore on the Internet, with lots of Easter eggs. For best results, use a browser other than Chrome, since Chrome blocks autoplaying sound.</p>
+    </div>
+    <div>
+    <h4>This is my resume: <div id="thirdcaret"><i class="fas fa-caret-down" onclick="expandThree()"></i></div>
 
-        <div><i class="devicon ruby devicon-ruby-plain"></i><br>Ruby</div>
-        <div><img src="images/sinatra.png" class="devicon sinatra"><br>Sinatra</div>
-        <div><i class="devicon ruby devicon-rails-plain"></i><br>Rails</div>
-        <div><i class="devicon git devicon-git-plain"></i><br>Git</div>
-        <div><i class="devicon heroku devicon-heroku-plain-wordmark"></i><br>Heroku</div>
+    </h4>
+        <div id="third" class="collapsed">
+          <hr>
+            <div>
 
-        <div><i class="devicon ps devicon-photoshop-plain"></i><i class="devicon ai devicon-illustrator-plain"></i><br>Adobe CS</div>
-        <div><i class="devicon google devicon-google-plain"></i><br>Google Maps API</div>
+                <h5 class="center">Milo Wissig</h5>
+                <p class="center">
+                Brooklyn, NY
+              </p>
+              <ul class="flexlist wrap">
+                <li><i class="fas fa-envelope"></i><a href="mailto:mwissig@gmail.com"> mwissig@gmail.com</a></li>
+                <li><i class="fab fa-github"></i> <a href="http://github.com/mwissig" target="_blank"> Github</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig" target="_blank"> Linkedin</a></li>
+              </ul>
+              <p>
+                Full stack web developer with a background in painting, printmaking, and digital print design and production.</p>
+              <h5>Skills</h5>
+              <div class="skillsgrid flexlist wrap">
+                <div><i class="devicon html devicon-html5-plain-wordmark"></i><br>HTML5</div>
+                <div><i class="devicon css devicon-css3-plain-wordmark"></i><br>CSS3</div>
+                <div><i class="devicon js devicon-javascript-plain"></i><br>JavaScript</div>
+
+                <div><i class="devicon ruby devicon-ruby-plain"></i><br>Ruby</div>
+                <div><img src="images/sinatra.png" class="devicon sinatra"><br>Sinatra</div>
+                <div><i class="devicon ruby devicon-rails-plain"></i><br>Rails</div>
+                <div><i class="devicon git devicon-git-plain"></i><br>Git</div>
+                <div><i class="devicon heroku devicon-heroku-plain-wordmark"></i><br>Heroku</div>
+
+                <div><i class="devicon ps devicon-photoshop-plain"></i><i class="devicon ai devicon-illustrator-plain"></i><br>Adobe</div>
+                <div><i class="devicon google devicon-google-plain"></i><br>Maps</div>
+              </div>
+              <h5>Projects</h5>
+              <p>
+                <a href="https://crepuscular.herokuapp.com/" target="_blank">Crepuscular Games</a> / Rails with JavaScript, ActionCable, and SendGrid, 2019<br>
+                A multiplayer game site containting multiple interactive games and toys; expandable to add more games.
+              </p>
+              <p>
+                <a href="https://juriedshow.herokuapp.com/" target="_blank">Juried Show</a> / Rails & SVG, 2019<br>
+                An art toy that allows users to create randomized vector graphics.
+              </p>
+              <p>
+                <a href="https://artcrawler.herokuapp.com/" target="_blank">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
+                A mobile web app for scheduling, mapping and attending multi-location arts events.
+              </p>
+              <hr>
+              <p>
+                <a href="https://sat-panel.herokuapp.com/" target="_blank">School Admin Panel</a> / Rails, 2018<br>
+                An administration panel for managing students, courses and employees in a school.
+              </p>
+              <hr>
+              <p>
+                <a href="http://postpile.herokuapp.com" target="_blank">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
+                A social media web app that allows users to make text and image posts and send messages.
+              </p>
+              <hr>
+              <p>
+                <a href="https://mwissig.github.io/Munder-Difflin-Paper/" target="_blank">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
+                A web site for a paper company featuring scroll animations.
+              </p>
+              <hr>
+              <p>
+                <a href="http://coldplaycrybaby.com" target="_blank">ColdplayCrybaby.com</a> / HTML, CSS & Graphics, 2017<br>
+                A retro Livejournal-inspired site featured on the iTunes top 100 comedy podcast “My Brother My Brother and Me."</p>
+              <h5>Education</h5>
+              <p>
+                New York Code + Design Academy / Certificate<br>
+                OCTOBER 2018, NEW YORK, NY<br>
+                NYCDA Software Engineering Intensive Certification
+              </p>
+              <hr>
+              <p>
+                Pratt Institute / BFA<br>
+                MAY 2013, BROOKLYN, NY<br>
+                Bachelor of Fine Arts; Specializing in Painting</p>
+              <h5>Experience</h5>
+              <p>
+                Freelance Graphic Designer and Painter
+                <br>
+                MAY 2013 - PRESENT, NEW YORK, NY
+              </p>
+              <hr>
+              <p>
+                Staples / Copy & Print Associate
+                <br>
+                JANUARY 2015 - JUNE 2018, NEW YORK, NY
+              </p>
+              <hr>
+              <p>
+                Pratt Institute / Gallery Assistant
+                <br>
+                SEPTEMBER 2011 - JANUARY 2013, NEW YORK, NY
+                <hr>
+              <h6 class="download"> Download PDF Resume | <a href="docs/Wissig_Milo_resume.pdf" download target="_blank"><i class="fas fa-file-download"></i> formatted</a> | <a href="docs/Wissig_Milo_resume_plain.pdf" download target="_blank"><i class="fas fa-file-download"></i> plain text</a></h6>
+            </div>
+
+
       </div>
-      <h3 onclick=scrollToSection('projects')>Projects</h3>
-      <p>
-        <a href="https://artcrawler.herokuapp.com/" target="_blank">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
-        A mobile web app for scheduling, mapping and attending multi-location arts events.
-      </p>
-      <hr>
-      <p>
-        <a href="https://sat-panel.herokuapp.com/" target="_blank">School Admin Panel</a> / Rails, 2018<br>
-        An administration panel for managing students, courses and employees in a school.
-      </p>
-      <hr>
-      <p>
-        <a href="http://postpile.herokuapp.com" target="_blank">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
-        A social media web app that allows users to make text and image posts and send messages.
-      </p>
-      <hr>
-      <p>
-        <a href="https://mwissig.github.io/Munder-Difflin-Paper/" target="_blank"">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
-        A web site for a paper company featuring scroll animations.
-      </p>
-      <hr>
-      <p>
-        <a href="http://coldplaycrybaby.com" target="_blank">ColdplayCrybaby.com</a> / HTML, CSS & Graphicss, 2017<br>
-        A retro Livejournal-inspired site featured on the iTunes top 100 comedy podcast “My Brother My Brother and Me.”</p>
-      <h3>Education</h3>
-      <p>
-        New York Code + Design Academy / Certificate<br>
-        OCTOBER 2018, NEW YORK, NY<br>
-        NYCDA Software Engineering Intensive Certification
-      </p>
-      <hr>
-      <p>
-        Pratt Institute / BFA<br>
-        MAY 2013, BROOKLYN, NY<br>
-        Bachelor of Fine Arts; Specializing in Painting</p>
-      <h3>Experience</h3>
-      <p>
-        Staples / Copy & Print Associate
-        <br>
-        JANUARY 2015 - JUNE 2018, NEW YORK, NY
-        <br>
-        Created and prepared graphics for print media and produced digital prints with a variety of equipment.
-      </p>
-      <hr>
-      <p>
-        Pratt Institute / Gallery Assistant
-        <br>
-        SEPTEMBER 2011 - JANUARY 2013, NEW YORK, NY<br>
-        Installed work for art exhibitions and responded to gallery inquiries.</p>
-      <h2 class="download"> Download PDF Resume | <a href="docs/Wissig_Milo_resume.pdf" download target="_blank"><i class="fas fa-file-download"></i> formatted</a> | <a href="docs/Wissig_Milo_resume_plain.pdf" download target="_blank"><i class="fas fa-file-download"></i> plain text</a></h2>
-    </div>
-    <div class="copyrights">
-      <p>&copy; Milo Wissig 2018</p>
-    </div>
-  </section>
-  <footer id="footer" class="footer"><button class="animated infinite pulse" onclick="window.open('http://www.mwissig.com/art.html','_blank');">Looking for my painting portfolio? <i class="fas fa-angle-right"></i></button></footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="code.js"></script>
+  </div>
+  <div class="dots">
+    <div><h6><i class="fas fa-circle"></i></h6></div>
+    <div><h6><i class="fas fa-circle"></i></h6></div>
+    <div><h6><i class="fas fa-circle"></i></h6></div>
+</div>
+  <div>
+    <h6>
+<i class="fas fa-envelope"></i><a href="mailto:mwissig@gmail.com"> mwissig@gmail.com</a><br>
+<i class="fab fa-github"></i> <a href="http://github.com/mwissig" target="_blank"> Github</a><br>
+<i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig" target="_blank"> Linkedin</a>
+</h6>
+  </div>
+  <div id="third" class="collapsed">
+  </div>
+  <div class="copyrights">
+
+
+<p><i>If you are here looking for my painting portfolio, please check out my <a href="https://www.instagram.com/mwissig/" target="_blank">Instagram</a>.</i><p>
+      <p>&copy; Milo Wissig 2020</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  </div>
+  </p>
+  </div>
+  <script src="hi.js"></script>
 </body>
 
 </html>
