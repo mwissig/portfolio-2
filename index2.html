@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="hi.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <title>Milo Wissig - Web Developer - Portfolio</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Milo Wissig - Web Developer">
+<meta property="og:description" content="Full stack web developer making stuff with Rails. Currently working on multiplayer online games.">
+<meta property="og:image" content="thumbnail image, 1200x630 under 1 mb">
+<meta property="og:url" content="http://www.mwissig.com">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+  <div id="main">
+    <h1>Hi.</h1>
+    <h2>I'm Milo.</h2>
+    <h3>I'm a web developer.</h3>
+    <div>
+      <h4>This is what I'm working on now: <div id="firstcaret"><i class="fas fa-caret-down" onclick="expandOne()"></i></div>
+      </h4>
+    </div>
+    <div id="first" class="collapsed">
+      <div class="imagecontainer floatright"><img src="images/tictactoe.gif"></div>
+      <p>
+        I've been teaching myself to program multiplayer online games from scratch in Rails using ActionCable and simple DOM manipulation with JavaScript. I'm not looking at documentation for gaming for this project; just trying to figure out how far
+        I can push technology I'm already using: sure, I'm going about making a game the wrong way entirely, but what happens if I do it anyway? This project is called <a href="https://crepuscular.herokuapp.com/" target="_blank">Crepuscular Games</a>; and modeled after sites like Neopets where points and items earned in games could be used
+        across the site as parts of other games, and Twitch, where spectators can comment on games in-progress.</p>
+
+      <p>I started by creating site-wide chat rooms using ActionCable that could be accessed from different areas: individual games have their own chat rooms, and there is also a "lobby" chat for the entire site. In Rails, ActionCable allows newly
+        recieved data to be seen by users without refreshing the page, by allowing those changes to be made with CoffeeScript.</p>
+
+      <p>I had been thinking about how to use ActionCable, something I'd only used to make chat rooms in the past, to make a multiplayer game. I constructed a tic-tac-toe game using the same basic principles as the chat room, using ActionCable to
+        send data about game moves instead of chat messages. However, a web site where you can watch your friends play tic-tac-toe admittedly isn't very exciting.</p>
+      <div class="imagecontainer floatleft"><img src="images/mine.gif"></div>
+      <p>The next step up from tic-tac-toe was to expand the grid to a relatively massive interactive environment that players could explore and modify with keyboard-controlled characters. Typically, a Javascript-based game would be made with Canvas,
+        but what happens when you use a CSS grid? It works on the same principles as tic tac toe: each tile is simply a nested div with class names for the foreground and background, and rules for interacting with it are defined, in JavaScript, based
+        on those class names. The coordinates and class names of the tiles are recorded in the database, as well as the coordinates of the player sprite. It was like an extremely pared-down Terraria. This is still pretty buggy, especially the
+        controls, but players are able to see one another and make permanent changes to the board. I made all of the image assets for the game as well. In the future, players will be able to keep items they dig up in the mining game and there may be
+        a crafting section.</p>
+      <p>The project also gave me the opportunity to get familiar with scheduling automated tasks to clear old chat messages and trigger in-game events, incorporating WYSIWYG editors, email verification, and password recovery in Rails.<p>
+          <p>It is very much a work in progress, and players are constantly finding new ways of breaking entire sections of the site.</p>
+          <p><a href="https://crepuscular.herokuapp.com/" target="_blank">Visit Crepuscular Games</a></p>
+<p>          <a href="https://github.com/mwissig/crepuscular" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+                <h6>If you would like to test it without creating an account, you may use the email <span class="emph">user@example.com</span> and the password <span class="emph">password</span> to log in.</h6>
+    </div>
+    <div>
+      <h4>Here are some other things I've done: <div id="secondcaret"><i class="fas fa-caret-down" onclick="expandTwo()"></i></div>
+      </h4>
+
+    </div>
+    <div id="second" class="collapsed">
+      <h6>For any of these projects that require login credentials, you may use the username <span class="emph">User</span> or the email address <span class="emph">user@example.com</span> and the password <span class="emph">password</span>.</h6>
+      <div class="imagecontainer floatleft"><img src="images/juriedshow.gif"></div>
+      <p><a href="https://juriedshow.herokuapp.com/" target="_blank">Juried Show</a> is a little art toy I made in Rails to experiment with methods of encoding images as strings: what could I do to allow users to play with images without having to pay for hosting? It generates randomized coordiates and colors via a set of algorithms and plugs them into a series of SVG curves, creating simple vector drawings that resemble abstract expressionist paintings, then allows users to title their art and vote for which painting is the best, and download them as PNGs. An alternate version of the site allows users to make the images in black and white, with alternate math geared toward bigger, bolder shapes.</p>
+      <p>          <a href="https://github.com/mwissig/juriedshow" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+      <div class="imagecontainer floatright"><img src="images/kalimba.gif"></div>
+      <p>Along similar lines I also made a simple <a href="https://thumbpiano.herokuapp.com/" target="_blank">thumb piano app</a> to attempt encode music as a string. The app is buggy, and has caused problems with the sound on my computer after using it: I have to restart my computer to play other audio and video. But the basic principle works. Each recorded song is just a list of notes and the amount of time that passes between notes. The audio also does not sound very good, but since I have no musical talent, it makes little difference to me: I am pleased that the discordant noise in the recording sounds the same as it did when I initially pressed the keys.</p>
+            <p>          <a href="https://github.com/mwissig/thumbpiano" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+      <div class="imagecontainer floatleft"><iframe width="560" height="315" src="https://www.youtube.com/embed/_pUyfrStqE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <a href="https://artcrawler.herokuapp.com/" target="_blank">ArtCrawler</a> is an app I designed to make art events easier to navigate. During an open studios event or art walk, people from all over a given city or neighborhood will visit
+      artists' studios and galleries. Typically they will have a printed guide with maps, or build a new app for each event. ArtCrawler was designed to be a reusable app for these events; allowing event organizers to add multiple events, which
+      contain multiple locations, which can include multiple artists. Visitors can bookmark artists they want to see, which creates custom routes using Google Waypoints to help them decide the best route between all the studios they want to see, while helping them stay connected to the artists they want to remember. It uses the Google Maps API. The app is currently populated with fake information.</p>
+      <p>          <a href="https://github.com/mwissig/artcrawler" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+            <div class="imagecontainer floatright"><img src="images/palcoves.png"></div>
+      <p><a href="https://palcoves.herokuapp.com/" target="_blank">Palcoves</a> is a social media site I made in Rails. It was an experiment in discouraging passive interaction by requiring a minimum text statement with every action: you can't simply "like" a post. Nostalgia for the personalization options of the pre-social media internet led me to allow extensive styling options for posts and signatures: also, nostalgia for old web sites that allowed users to insert their own HTML or CSS into text fields, the feature that led me to learn basic web development skills as a kid to begin with. The result is that users have a right to make their content absolutely hideous, which for a change of pace, is charming: the users have control. Anonymity and control of multiple accounts was also a key feature: users could have multiple usernames and easily see which of their aliases they were using to interact with others. Posts would automatically become private after a set period of time unless they were saved into a user's archives. New account creation is currently down due to changes in GMail's security policies; making it no longer suitable as an automated mailer.
+      </p>
+            <p>          <a href="https://github.com/mwissig/palcoves" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <p>I had made a similar project earlier, essentially a Tumblr clone but without image upload capabilities, before I learned Rails, in Sinatra: <a href="http://postpile.herokuapp.com/" target="_blank">Postpile</a>.</p>
+            <p>          <a href="https://github.com/mwissig/Postpile" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+                  <div class="imagecontainer floatleft"><img src="images/adminpanel.gif"></div>
+      <p>A <a href="https://sat-panel.herokuapp.com/" thttps://sat-panel.herokuapp.com/arget="_blank">mock-up administration panel for a school</a>, made in Rails. Rather than name the school, it uses the Faker gem to name it after a random Star Wars species on every refresh. I focused on trying to fit make the most information accessible on the fewest amount of pages using collapsible menus and displaying information in forms. The site has a hierarchy of users that determines who can access and edit what information.</p>
+            <p>          <a href="https://github.com/mwissig/School-Admin-Panel" target="_blank"><i class="fab fa-github"></i> See my code</a></p>
+      <hr>
+                        <div class="imagecontainer floatright"><img src="images/coldplay.gif"></div>
+      <p>
+      <a href="http://coldplaycrybaby.com/" target="_blank">ColdplayCrybaby.com</a>: this is a site I was commissioned to do before I really learned anything about web development, and inspired by Geocities sites and LiveJournal from the late 90s and early 00s; the kind of web sites I made and saw when I was 12. It was featured on the podcast <a href="https://maximumfun.org/podcasts/my-brother-my-brother-and-me/" target="_blank">"My Brother, My Brother and Me,"</a> and created as part of an ongoing bit that occurred in four episodes. It's a love letter to bad design: intentionally broken gifs, autoplaying audio, spinning skulls: all the stuff we're not allowed to play with anymore on the Internet, with lots of Easter eggs. For best results, use a browser other than Chrome, since Chrome blocks autoplaying sound.</p>
+    </div>
+    <div>
+    <h4>This is my resume: <div id="thirdcaret"><i class="fas fa-caret-down" onclick="expandThree()"></i></div>
+
+    </h4>
+        <div id="third" class="collapsed">
+          <hr>
+            <div>
+
+                <h5 class="center">Milo Wissig</h5>
+                <p class="center">
+                Brooklyn, NY
+              </p>
+              <ul class="flexlist wrap">
+                <li><i class="fas fa-envelope"></i><a href="mailto:mwissig@gmail.com"> mwissig@gmail.com</a></li>
+                <li><i class="fab fa-github"></i> <a href="http://github.com/mwissig" target="_blank"> Github</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig" target="_blank"> Linkedin</a></li>
+              </ul>
+              <p>
+                Full stack web developer with a background in painting, printmaking, and digital print design and production.</p>
+              <h5>Skills</h5>
+              <div class="skillsgrid flexlist wrap">
+                <div><i class="devicon html devicon-html5-plain-wordmark"></i><br>HTML5</div>
+                <div><i class="devicon css devicon-css3-plain-wordmark"></i><br>CSS3</div>
+                <div><i class="devicon js devicon-javascript-plain"></i><br>JavaScript</div>
+
+                <div><i class="devicon ruby devicon-ruby-plain"></i><br>Ruby</div>
+                <div><img src="images/sinatra.png" class="devicon sinatra"><br>Sinatra</div>
+                <div><i class="devicon ruby devicon-rails-plain"></i><br>Rails</div>
+                <div><i class="devicon git devicon-git-plain"></i><br>Git</div>
+                <div><i class="devicon heroku devicon-heroku-plain-wordmark"></i><br>Heroku</div>
+
+                <div><i class="devicon ps devicon-photoshop-plain"></i><i class="devicon ai devicon-illustrator-plain"></i><br>Adobe CS</div>
+                <div><i class="devicon google devicon-google-plain"></i><br>Google Maps API</div>
+              </div>
+              <h5>Projects</h5>
+              <p>
+                <a href="https://artcrawler.herokuapp.com/" target="_blank">ArtCrawler</a> / Rails & Google Maps API, 2018<br>
+                A mobile web app for scheduling, mapping and attending multi-location arts events.
+              </p>
+              <hr>
+              <p>
+                <a href="https://sat-panel.herokuapp.com/" target="_blank">School Admin Panel</a> / Rails, 2018<br>
+                An administration panel for managing students, courses and employees in a school.
+              </p>
+              <hr>
+              <p>
+                <a href="http://postpile.herokuapp.com" target="_blank">Postpile</a> / Sinatra & ActiveRecord, 2018<br>
+                A social media web app that allows users to make text and image posts and send messages.
+              </p>
+              <hr>
+              <p>
+                <a href="https://mwissig.github.io/Munder-Difflin-Paper/" target="_blank">Munder-Difflin Paper</a> / JavaScript & CSS, 2018<br>
+                A web site for a paper company featuring scroll animations.
+              </p>
+              <hr>
+              <p>
+                <a href="http://coldplaycrybaby.com" target="_blank">ColdplayCrybaby.com</a> / HTML, CSS & Graphicss, 2017<br>
+                A retro Livejournal-inspired site featured on the iTunes top 100 comedy podcast “My Brother My Brother and Me."</p>
+              <h5>Education</h5>
+              <p>
+                New York Code + Design Academy / Certificate<br>
+                OCTOBER 2018, NEW YORK, NY<br>
+                NYCDA Software Engineering Intensive Certification
+              </p>
+              <hr>
+              <p>
+                Pratt Institute / BFA<br>
+                MAY 2013, BROOKLYN, NY<br>
+                Bachelor of Fine Arts; Specializing in Painting</p>
+              <h5>Experience</h5>
+              <p>
+                Freelance Graphic Designer and Painter
+                <br>
+                MAY 2013 - PRESENT, NEW YORK, NY
+              </p>
+              <hr>
+              <p>
+                Staples / Copy & Print Associate
+                <br>
+                JANUARY 2015 - JUNE 2018, NEW YORK, NY
+              </p>
+              <hr>
+              <p>
+                Pratt Institute / Gallery Assistant
+                <br>
+                SEPTEMBER 2011 - JANUARY 2013, NEW YORK, NY
+                <hr>
+              <h6 class="download"> Download PDF Resume | <a href="docs/Wissig_Milo_resume.pdf" download target="_blank"><i class="fas fa-file-download"></i> formatted</a> | <a href="docs/Wissig_Milo_resume_plain.pdf" download target="_blank"><i class="fas fa-file-download"></i> plain text</a></h6>
+            </div>
+
+
+      </div>
+  </div>
+  <div class="dots">
+    <div><h6><i class="fas fa-circle"></i></h6></div>
+    <div><h6><i class="fas fa-circle"></i></h6></div>
+    <div><h6><i class="fas fa-circle"></i></h6></div>
+</div>
+  <div>
+    <h6>
+<i class="fas fa-envelope"></i><a href="mailto:mwissig@gmail.com"> mwissig@gmail.com</a><br>
+<i class="fab fa-github"></i> <a href="http://github.com/mwissig" target="_blank"> Github</a><br>
+<i class="fab fa-linkedin"></i> <a href="http://linkedin.com/mwissig" target="_blank"> Linkedin</a>
+</h6>
+  </div>
+  <div id="third" class="collapsed">
+  </div>
+  <div class="copyrights">
+
+
+<p><i>If you are here looking for my painting portfolio, please check out my <a href="https://www.instagram.com/mwissig/" target="_blank">Instagram</a>.</i><p>
+      <p>&copy; Milo Wissig 2020</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  </div>
+  </p>
+  </div>
+  <script src="hi.js"></script>
+</body>
+
+</html>

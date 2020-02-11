@@ -1,0 +1,148 @@
+body {
+  font-family: 'Varela', sans-serif;
+  color: rgb(27, 27, 27);
+  background-image: linear-gradient(45deg, rgb(230, 238, 244) 27.27%, #ffffff 27.27%, #ffffff 50%, rgb(230, 238, 244) 50%, rgb(230, 238, 244) 77.27%, #ffffff 77.27%, #ffffff 100%);
+background-size: 311.13px 311.13px;
+margin: 0;
+height: auto;
+}
+p {
+  font-size: 18px;
+  text-align: justify;
+}
+a {
+  font-weight: bold;
+  color: rgb(100, 106, 164);
+  text-decoration: none;
+}
+img {
+  /* display: block;
+  margin: 0 auto;
+  text-align: center; */
+}
+.emph {
+    color: rgb(100, 106, 164);
+}
+a:hover, a:active {
+ color: rgb(138, 144, 200);
+}
+
+a:visited {
+  color: rgb(67, 74, 143);
+}
+
+h1 {
+  font-size: 200px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 120px;
+  margin: 0;
+  color: rgb(100, 106, 164);
+}
+
+h3 {
+  font-size: 80px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 60px;
+  margin: 1px;
+}
+h5 {
+  font-size: 35px;
+  margin: 0;
+}
+h6 {
+  font-size: 20px;
+  margin: 0;
+}
+hr {
+  width: 80%;
+  color: rgb(27, 27, 27);
+}
+#main {
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 60%;
+  padding: 10%;
+  margin: 0 auto;
+  height: 100%;
+  bottom: 0;
+}
+.skillsgrid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(10, auto);
+  height: auto;
+}
+
+.skillsgrid div {
+  text-align: center;
+  max-width: 80px;
+  height: auto;
+  margin: 10px;
+}
+.flexlist {
+  display: flex;
+  list-style: none;
+  max-width: 95%;
+  margin: 0 auto;
+  justify-content: space-around;
+
+}
+.flexlist li {
+margin-left: 0;
+    margin: 3px 5px !important;
+}
+.wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sinatra {
+  height: 30px;
+  display: inline;
+}
+
+.devicon {
+  font-size: 30px;
+  color: rgb(25, 25, 25);
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+.center {
+  text-align: center;
+}
+.imagecontainer {
+  margin: 2em;
+}
+.collapsed {
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.autoheight {
+height: auto;
+  visibility: visible;
+}
+#firstcaret, #secondcaret, #thirdcaret {
+  display: inline;
+    color: rgb(100, 106, 164);
+}
+#firstcaret:hover, #secondcaret:hover, #thirdcaret:hover {
+    color: rgb(138, 144, 200);
+}
+.dots {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin: 1em auto;
+}
