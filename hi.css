@@ -146,3 +146,64 @@ height: auto;
   width: 40vw;
   margin: 1em auto;
 }
+
+@media only screen and (max-width: 560px) {
+  body {
+    /* background-image: none;
+    background: white; */
+  }
+  #main {
+    width: calc(100% - 2em);
+    max-width: 100%;
+    padding: 1em;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    right: 0;
+    left: 0;
+    right: 0;
+  }
+  h1 {
+    font-size: 150px;
+  }
+
+  h2 {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .imagecontainer {
+    margin: 1em;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 1em auto;
+  }
+  .floatleft {
+    display: block;
+    float: none;
+  }
+  .floatright {
+    display: block;
+    float: none;
+  }
+  img {
+    width: 100%;
+    max-width: calc(100vw - 2em);
+  }
+}
